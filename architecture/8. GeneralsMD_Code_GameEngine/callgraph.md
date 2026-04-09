@@ -1,0 +1,916 @@
+﻿# Call Graph & Dependency Diagrams
+
+Auto-generated from per-file architecture docs.
+
+## Function Call Graph
+
+Showing functions with 2+ incoming calls. Limited to 150 edges.
+
+```mermaid
+%%{ init: { 'theme': 'dark', 'flowchart': { 'curve': 'basis' } } }%%
+graph LR
+
+  subgraph GeneralsMD
+    _FEBDispatch__["~FEBDispatch()"]
+    action["action"]
+    activateSpyVision["activateSpyVision"]
+    ActiveShroudUpgradeModuleData__buildFieldParse["ActiveShroudUpgradeModuleData::buildFieldParse"]
+    addAudioEvent["addAudioEvent"]
+    addAudioEvent_AudioEventRTS_eventToAdd_["addAudioEvent(AudioEventRTS eventToAdd)"]
+    AddCommandToPacket["AddCommandToPacket"]
+    addConsumption["addConsumption"]
+    addMessage["addMessage"]
+    addModuleInternal["addModuleInternal"]
+    addObjectBuilt["addObjectBuilt"]
+    addObjectDestroyed["addObjectDestroyed"]
+    addObjectType["addObjectType"]
+    addPoint["addPoint"]
+    addPowerBonus["addPowerBonus"]
+    addProduction["addProduction"]
+    addRayEffect["addRayEffect"]
+    addText["addText"]
+    addToContain_Object_rider_["addToContain(Object rider)"]
+    addToContain_Object_["addToContain(Object)"]
+    addToContainList["addToContainList"]
+    AddToNetCommandList["AddToNetCommandList"]
+    adjustDisplay["adjustDisplay"]
+    adjustPower["adjustPower"]
+    adjustPower_Int_powerDelta__Bool_adding_["adjustPower(Int powerDelta, Bool adding)"]
+    aiDoCommand["aiDoCommand"]
+    AIUpdateInterface__crc["AIUpdateInterface::crc"]
+    allCommandsReady["allCommandsReady"]
+    angleClosestTo["angleClosestTo"]
+    Anim2D__draw["Anim2D::draw"]
+    Anim2D__tryNextFrame["Anim2D::tryNextFrame"]
+    applyCrushingDamage["applyCrushingDamage"]
+    applyCrushingDamage__["applyCrushingDamage()"]
+    applyStaticLODLevel["applyStaticLODLevel"]
+    applyTopplingForce["applyTopplingForce"]
+    ArmorUpgrade_constructor["ArmorUpgrade constructor"]
+    AsciiString__concat["AsciiString::concat"]
+    AsciiString__ensureUniqueBufferOfSize["AsciiString::ensureUniqueBufferOfSize"]
+    AsciiString__format["AsciiString::format"]
+    assistAttack["assistAttack"]
+    attemptBestFirePointPosition["attemptBestFirePointPosition"]
+    attemptDamage["attemptDamage"]
+    attemptHealing["attemptHealing"]
+    BaseRegenerateUpdate__onDamage["BaseRegenerateUpdate::onDamage"]
+    BaseRegenerateUpdate__update["BaseRegenerateUpdate::update"]
+    beginBlock["beginBlock"]
+    beginSlowDeath["beginSlowDeath"]
+    beginStructureTopple["beginStructureTopple"]
+    buildSpecificAITeam__["buildSpecificAITeam()"]
+    ButtonFlashTransition__draw["ButtonFlashTransition::draw"]
+    calcFlightPath["calcFlightPath"]
+    calcHashForLowercaseString["calcHashForLowercaseString"]
+    calcMinTurnRadius["calcMinTurnRadius"]
+    calcRandomForce["calcRandomForce"]
+    calculateAcademyAdvice["calculateAcademyAdvice"]
+    callbackWrapper["callbackWrapper"]
+    cancelAndRefundAllProduction["cancelAndRefundAllProduction"]
+    canDoSpecialPower["canDoSpecialPower"]
+    canFireWeaponAtObject["canFireWeaponAtObject"]
+    canGetRepairedAt["canGetRepairedAt"]
+    canMakeUnit["canMakeUnit"]
+    CanSelectDrawable["CanSelectDrawable"]
+    canUseSpecialPower["canUseSpecialPower"]
+    CashBountyPower__findBounty["CashBountyPower::findBounty"]
+    CashBountyPower__onObjectCreated["CashBountyPower::onObjectCreated"]
+    CashBountyPower__onSpecialPowerCreation["CashBountyPower::onSpecialPowerCreation"]
+    CashBountyPower__xfer["CashBountyPower::xfer"]
+    ChallengeMenuInit["ChallengeMenuInit"]
+    ChallengeMenuSystem["ChallengeMenuSystem"]
+    ChallengeMenuUpdate["ChallengeMenuUpdate"]
+    checkForSupplyCenter["checkForSupplyCenter"]
+    cleanUp["cleanUp"]
+    clear["clear"]
+    ClearGSMessageBoxes["ClearGSMessageBoxes"]
+    clearScratchPadMaps["clearScratchPadMaps"]
+    clientUpdate["clientUpdate"]
+    clientUpdate__["clientUpdate()"]
+    close["close"]
+    closeDownloadWindow["closeDownloadWindow"]
+    closeSaveMenu["closeSaveMenu"]
+    collectMsgStats["collectMsgStats"]
+    computeAggregateStates["computeAggregateStates"]
+    computeApproachPosition["computeApproachPosition"]
+    connectCallback["connectCallback"]
+    ControlBar__parseCommandButtonDefinition["ControlBar::parseCommandButtonDefinition"]
+    ControlBar__populateObserverInfoWindow["ControlBar::populateObserverInfoWindow"]
+    ControlBar__populateObserverList["ControlBar::populateObserverList"]
+    ControlBarObserverSystem["ControlBarObserverSystem"]
+    ControlBarSystem["ControlBarSystem"]
+    coolDown["coolDown"]
+    copyReplay["copyReplay"]
+    CrateSystem__newCrateTemplate["CrateSystem::newCrateTemplate"]
+    CrateSystem__newCrateTemplateOverride["CrateSystem::newCrateTemplateOverride"]
+    crc_Xfer_xfer_["crc(Xfer xfer)"]
+    createEvent["createEvent"]
+    createParticleSystem["createParticleSystem"]
+    createRadiusDecal["createRadiusDecal"]
+    createScaffolding["createScaffolding"]
+    CreditsMenuInit["CreditsMenuInit"]
+    CreditsMenuShutdown["CreditsMenuShutdown"]
+    CriticalSection__enter["CriticalSection::enter"]
+    CriticalSection__exit["CriticalSection::exit"]
+    DamDie__onDie["DamDie::onDie"]
+    DamDieModuleData__buildFieldParse["DamDieModuleData::buildFieldParse"]
+    DataChunkInput__parse["DataChunkInput::parse"]
+    DataChunkInput__readDict["DataChunkInput::readDict"]
+    deathByToppling["deathByToppling"]
+    decryptBuf["decryptBuf"]
+    defect["defect"]
+    DEFINE_KEY["DEFINE_KEY"]
+    deleteOverrides["deleteOverrides"]
+    deleteRayEffect["deleteRayEffect"]
+    deleteReplay["deleteReplay"]
+    DeletionUpdate__calcSleepDelay["DeletionUpdate::calcSleepDelay"]
+    DeletionUpdate__DeletionUpdate["DeletionUpdate::DeletionUpdate"]
+    deliverPayload["deliverPayload"]
+    deposit["deposit"]
+    deselectAll["deselectAll"]
+    DestroyDie__DestroyDie["DestroyDie::DestroyDie"]
+    DestroyDie__onDie["DestroyDie::onDie"]
+    destroyQuitMenu["destroyQuitMenu"]
+    detonate["detonate"]
+    detonateOnce["detonateOnce"]
+    DieMuxData__isDieApplicable["DieMuxData::isDieApplicable"]
+    DiplomacyInput["DiplomacyInput"]
+    DiplomacySystem["DiplomacySystem"]
+    DisconnectControlSystem["DisconnectControlSystem"]
+    DiscreteCircle__DiscreteCircle_Int_xCenter__Int_yCenter__Int_radius_["DiscreteCircle::DiscreteCircle(Int xCenter, Int yCenter, Int radius)"]
+    DiscreteCircle__drawCircle_ScanlineDrawFunc_functionToDrawWith__void_parmToPass_["DiscreteCircle::drawCircle(ScanlineDrawFunc functionToDrawWith, void parmToPass)"]
+    doActivationWork["doActivationWork"]
+    doArmorSet["doArmorSet"]
+    doAudioFeedback["doAudioFeedback"]
+    DoCompressTest["DoCompressTest"]
+    doDamageFX["doDamageFX"]
+    doDamageScan["doDamageScan"]
+    DoesCommandRequireACommandID["DoesCommandRequireACommandID"]
+    doFireWeaponCommand["doFireWeaponCommand"]
+    doGuardCommand["doGuardCommand"]
+    doKeyDown["doKeyDown"]
+    doKeyUp["doKeyUp"]
+    doLoadGame["doLoadGame"]
+    doPhaseStuff["doPhaseStuff"]
+    doPullInDocking["doPullInDocking"]
+    doPushOutDocking["doPushOutDocking"]
+    doRadioUnselect["doRadioUnselect"]
+    doRelay__["doRelay()"]
+    doSabotageFeedbackFX["doSabotageFeedbackFX"]
+    doSend_doRecv["doSend/doRecv"]
+    doSpecialPower["doSpecialPower"]
+    doSpecialPowerAtLocation["doSpecialPowerAtLocation"]
+    doSpecialPowerAtObject["doSpecialPowerAtObject"]
+    doWeaponSet["doWeaponSet"]
+    DownloadMenuInit["DownloadMenuInit"]
+    DownloadMenuInput["DownloadMenuInput"]
+    DownloadMenuSystem["DownloadMenuSystem"]
+    DownloadMenuUpdate["DownloadMenuUpdate"]
+    draw_View_view_["draw(View view)"]
+    drawableIconNameToIndex["drawableIconNameToIndex"]
+    drawTypeText["drawTypeText"]
+    DumpExceptionInfo["DumpExceptionInfo"]
+    DynamicGeometryInfoUpdate__update["DynamicGeometryInfoUpdate::update"]
+    DynamicGeometryInfoUpdate__xfer["DynamicGeometryInfoUpdate::xfer"]
+    DynamicGeometryInfoUpdateModuleData__buildFieldParse["DynamicGeometryInfoUpdateModuleData::buildFieldParse"]
+    eligibleForArmorSet["eligibleForArmorSet"]
+    eligibleForWeaponSet["eligibleForWeaponSet"]
+    embedInUseMap["embedInUseMap"]
+    EnableAcceptControls["EnableAcceptControls"]
+    encryptBuf["encryptBuf"]
+    EncryptString["EncryptString"]
+    EnemyNearUpdate__update["EnemyNearUpdate::update"]
+    ensureUniqueBufferOfSize["ensureUniqueBufferOfSize"]
+    errorCallback["errorCallback"]
+    evaluateAllDestroyed["evaluateAllDestroyed"]
+    evaluateBezSegmentAtT["evaluateBezSegmentAtT"]
+    evaluateConditions["evaluateConditions"]
+    evaluateTeamEnteredAreaEntirely["evaluateTeamEnteredAreaEntirely"]
+    evaluateTier1Advice["evaluateTier1Advice"]
+    execute__["execute()"]
+    executeActions["executeActions"]
+    executeCrateBehavior["executeCrateBehavior"]
+    ExitConditions__shouldExit["ExitConditions::shouldExit"]
+    exitObjectViaDoor["exitObjectViaDoor"]
+    ExMessageBoxYesNo___ExMessageBoxYesNoCancel___ExMessageBoxOkCancel___ExMessageBoxOk___ExMessageBoxCancel["ExMessageBoxYesNo / ExMessageBoxYesNoCancel / ExMessageBoxOkCancel / ExMessageBoxOk / ExMessageBoxCancel"]
+    ExperienceScalarUpgrade__upgradeImplementation["ExperienceScalarUpgrade::upgradeImplementation"]
+    ExtendedMessageBoxSystem["ExtendedMessageBoxSystem"]
+    extendRadar["extendRadar"]
+    extractAndSaveMap["extractAndSaveMap"]
+    FEBDispatch__["FEBDispatch()"]
+    filterLine__["filterLine()"]
+    findBestInfo["findBestInfo"]
+    findBestInfoSlow["findBestInfoSlow"]
+    findBestPrison["findBestPrison"]
+    findClosestEnemy["findClosestEnemy"]
+    findClosestFreeGarrisonPointIndex["findClosestFreeGarrisonPointIndex"]
+    findDrone["findDrone"]
+    findEntry["findEntry"]
+    findFunction["findFunction"]
+    findMessage["findMessage"]
+    findRoadOrBridge["findRoadOrBridge"]
+    findStaticLODLevel["findStaticLODLevel"]
+    findTemplate["findTemplate"]
+    findTemplateInternal["findTemplateInternal"]
+    fireOCL["fireOCL"]
+    FirestormDynamicGeometryInfoUpdate__update["FirestormDynamicGeometryInfoUpdate::update"]
+    FirewallHelperClass__behaviorDetectionUpdate["FirewallHelperClass::behaviorDetectionUpdate"]
+    FireWeaponPower__doSpecialPower["FireWeaponPower::doSpecialPower"]
+    FireWeaponPower__doSpecialPowerAtLocation["FireWeaponPower::doSpecialPowerAtLocation"]
+    FireWeaponPower__doSpecialPowerAtObject["FireWeaponPower::doSpecialPowerAtObject"]
+    FireWeaponPower__xfer["FireWeaponPower::xfer"]
+    FireWeaponPowerModuleData__buildFieldParse["FireWeaponPowerModuleData::buildFieldParse"]
+    FireWeaponUpdate__isOkayToFire["FireWeaponUpdate::isOkayToFire"]
+    FireWeaponUpdate__update["FireWeaponUpdate::update"]
+    FlashTransition__update["FlashTransition::update"]
+    FontLibrary__deleteAllFonts["FontLibrary::deleteAllFonts"]
+    FontLibrary__getFont["FontLibrary::getFont"]
+    FontLibrary__unlinkFont["FontLibrary::unlinkFont"]
+    format["format"]
+    format__format_va["format, format_va"]
+    format_va["format_va"]
+    FrameDataManager__addNetCommandMsg["FrameDataManager::addNetCommandMsg"]
+    FrameDataManager__allCommandsReady["FrameDataManager::allCommandsReady"]
+    FrameDataManager__resetFrame["FrameDataManager::resetFrame"]
+    FrameDataManager__zeroFrames["FrameDataManager::zeroFrames"]
+    friend_enableAfterburners["friend_enableAfterburners"]
+    friend_getFinalOverride["friend_getFinalOverride"]
+    FXList__doFXObj["FXList::doFXObj"]
+    FXList__doFXPos["FXList::doFXPos"]
+    FXListDie__onDie["FXListDie::onDie"]
+    FXNugget__doFXObj["FXNugget::doFXObj"]
+    GadgetButtonDrawClock["GadgetButtonDrawClock"]
+    GadgetButtonSetBorder["GadgetButtonSetBorder"]
+    GadgetButtonSetData["GadgetButtonSetData"]
+    GadgetComboBoxAddEntry["GadgetComboBoxAddEntry"]
+    GadgetComboBoxGetDropDownButton___GetListBox___GetEditBox["GadgetComboBoxGetDropDownButton / GetListBox / GetEditBox"]
+    GadgetComboBoxReset["GadgetComboBoxReset"]
+    GadgetHorizontalSliderInput["GadgetHorizontalSliderInput"]
+    GadgetHorizontalSliderSystem["GadgetHorizontalSliderSystem"]
+    GadgetListBoxAddEntryImage["GadgetListBoxAddEntryImage"]
+    GadgetListBoxAddEntryText["GadgetListBoxAddEntryText"]
+    GadgetListBoxInput["GadgetListBoxInput"]
+    GadgetListBoxMultiInput["GadgetListBoxMultiInput"]
+    GadgetProgressBarSystem["GadgetProgressBarSystem"]
+    GadgetPushButtonInput["GadgetPushButtonInput"]
+    GadgetRadioButtonInput["GadgetRadioButtonInput"]
+    GadgetRadioButtonSystem["GadgetRadioButtonSystem"]
+    GadgetRadioSetSelection["GadgetRadioSetSelection"]
+    GadgetSliderGetMinMax["GadgetSliderGetMinMax"]
+    GadgetSliderGetPosition["GadgetSliderGetPosition"]
+    GadgetStaticTextGetText["GadgetStaticTextGetText"]
+    GadgetStaticTextSetText["GadgetStaticTextSetText"]
+    GadgetTabControlComputeSubPaneSize["GadgetTabControlComputeSubPaneSize"]
+    GadgetTabControlCreateSubPanes["GadgetTabControlCreateSubPanes"]
+    GadgetTabControlInput["GadgetTabControlInput"]
+    GadgetTabControlResizeSubPanes["GadgetTabControlResizeSubPanes"]
+    GadgetTabControlShowSubPane["GadgetTabControlShowSubPane"]
+    GadgetTabControlSystem["GadgetTabControlSystem"]
+    GadgetTextEntryGetText["GadgetTextEntryGetText"]
+    GadgetTextEntrySetText["GadgetTextEntrySetText"]
+    GameInfoToAsciiString["GameInfoToAsciiString"]
+    GameMessage__appendArgument["GameMessage::appendArgument"]
+    GameSpyCloseOverlay["GameSpyCloseOverlay"]
+    GameSpyInfo__addChat["GameSpyInfo::addChat"]
+    GameSpyInfo__addText["GameSpyInfo::addText"]
+    GameSpyInfo__getPingValue["GameSpyInfo::getPingValue"]
+    GameSpyInfo__sendChat["GameSpyInfo::sendChat"]
+    GameSpyInfo__setGameOptions["GameSpyInfo::setGameOptions"]
+    GameSpyOpenOverlay["GameSpyOpenOverlay"]
+    GameSpyPlayerInfoOverlaySystem["GameSpyPlayerInfoOverlaySystem"]
+    generateFilename["generateFilename"]
+    generateFilenamePrefix["generateFilenamePrefix"]
+    GenerateNextCommandID["GenerateNextCommandID"]
+    generatePlayInfo["generatePlayInfo"]
+    getAbleToAttackSpecificObject["getAbleToAttackSpecificObject"]
+    getAiFreeToExit["getAiFreeToExit"]
+    getApproximateLength["getApproximateLength"]
+    getAsciiBuildTime["getAsciiBuildTime"]
+    getAsciiVersion["getAsciiVersion"]
+    getBool_setBool["getBool/setBool"]
+    getBridgeScaffoldBehaviorInterfaceFromObject["getBridgeScaffoldBehaviorInterfaceFromObject"]
+    GetCommandMsg["GetCommandMsg"]
+    getExitPosition["getExitPosition"]
+    getFileListInDirectory["getFileListInDirectory"]
+    getFinalOverride["getFinalOverride"]
+    getFullUnicodeVersion["getFullUnicodeVersion"]
+    GetFunctionDetails["GetFunctionDetails"]
+    GetGameClientRandomValue["GetGameClientRandomValue"]
+    GetGameLogicRandomValue["GetGameLogicRandomValue"]
+    GetGameLogicRandomValueReal["GetGameLogicRandomValueReal"]
+    getInfoResponseForRequest["getInfoResponseForRequest"]
+    getInfoResponseForStatus["getInfoResponseForStatus"]
+    getInt_setInt["getInt/setInt"]
+    getLevelsToGain["getLevelsToGain"]
+    getListboxEntryBasedOnCoord["getListboxEntryBasedOnCoord"]
+    getLocalEffectPos["getLocalEffectPos"]
+    getMapPreviewImage["getMapPreviewImage"]
+    getNaturalRallyPoint["getNaturalRallyPoint"]
+    getNextFilenameFromSpeech["getNextFilenameFromSpeech"]
+    getNickForMessage["getNickForMessage"]
+    getNoSoundMarker["getNoSoundMarker"]
+    getPercentReady["getPercentReady"]
+    GetPrecisionTimer_Int64_t_["GetPrecisionTimer(Int64 t)"]
+    getRadarPriority["getRadarPriority"]
+    getRayEffectData["getRayEffectData"]
+    getReal_setReal["getReal/setReal"]
+    getTargetObject["getTargetObject"]
+    getUnicodeBuildTime["getUnicodeBuildTime"]
+    getUnicodeDateBuffer["getUnicodeDateBuffer"]
+    getUnicodeTimeBuffer["getUnicodeTimeBuffer"]
+    getUnicodeVersion["getUnicodeVersion"]
+    getUpgradedSupplyBoost["getUpgradedSupplyBoost"]
+    GhostObject__xfer["GhostObject::xfer"]
+    GhostObjectManager__xfer["GhostObjectManager::xfer"]
+    GlobalData__parseGameDataDefinition["GlobalData::parseGameDataDefinition"]
+    GlobalLanguage__adjustFontSize["GlobalLanguage::adjustFontSize"]
+    GlobalLanguage__init["GlobalLanguage::init"]
+    gogoExMessageBox["gogoExMessageBox"]
+    gotoNextMission["gotoNextMission"]
+    GPErrorCallback["GPErrorCallback"]
+    GPRecvBuddyMessageCallback["GPRecvBuddyMessageCallback"]
+    GPRecvBuddyRequestCallback["GPRecvBuddyRequestCallback"]
+    GPRecvBuddyStatusCallback["GPRecvBuddyStatusCallback"]
+    grabHexInt["grabHexInt"]
+    GSMessageBoxOk["GSMessageBoxOk"]
+    GuardRetaliateExitConditions__shouldExit["GuardRetaliateExitConditions::shouldExit"]
+    HandleCanceledDownload["HandleCanceledDownload"]
+    handleChat["handleChat"]
+    handleGameAnnounce["handleGameAnnounce"]
+    handleInActive["handleInActive"]
+    handleInGameSlashCommands["handleInGameSlashCommands"]
+    handleJoinAccept["handleJoinAccept"]
+    HandleOverallStats__["HandleOverallStats()"]
+    handleRequestJoin["handleRequestJoin"]
+    handleRequestLocations["handleRequestLocations"]
+    hasAttackedMeAndICanReturnFire["hasAttackedMeAndICanReturnFire"]
+    HeaderTemplateManager__getFontFromTemplate["HeaderTemplateManager::getFontFromTemplate"]
+    HeaderTemplateManager__init["HeaderTemplateManager::init"]
+    HealContain__doHeal["HealContain::doHeal"]
+    HealContain__update["HealContain::update"]
+    HealCrateCollide__["HealCrateCollide()"]
+    hideBeacon["hideBeacon"]
+    HideControlBar["HideControlBar"]
+    HideDiplomacy["HideDiplomacy"]
+    HideDisconnectWindow["HideDisconnectWindow"]
+    HideEstablishConnectionsWindow["HideEstablishConnectionsWindow"]
+    huntSpecialPower["huntSpecialPower"]
+    ImageCollection__load["ImageCollection::load"]
+    ImmortalBody_Thing_thing__const_ModuleData_moduleData_["ImmortalBody(Thing thing, const ModuleData moduleData)"]
+    InGameChatSystem["InGameChatSystem"]
+    INI__parseMapCacheDefinition["INI::parseMapCacheDefinition"]
+    init["init"]
+    init__["init()"]
+    init_int_argc__char_argv___["init(int argc, char argv[])"]
+    initAnimateWindow["initAnimateWindow"]
+    InitDisconnectWindow["InitDisconnectWindow"]
+    InitGameLogicRandom["InitGameLogicRandom"]
+    initializeBonePositions["initializeBonePositions"]
+    initiateIntentToDoSpecialPower["initiateIntentToDoSpecialPower"]
+    initiateIntentToDoSpecialPower__["initiateIntentToDoSpecialPower()"]
+    initLaser__["initLaser()"]
+    initLinks__["initLinks()"]
+    initMemoryManager["initMemoryManager"]
+    InitRandom["InitRandom"]
+    initWaveGuide["initWaveGuide"]
+    insert_Object_obj__Real_numeric_["insert(Object obj, Real numeric)"]
+    isCloseEnoughToTarget["isCloseEnoughToTarget"]
+    isDieApplicable["isDieApplicable"]
+    isEqualCommandMsg["isEqualCommandMsg"]
+    isInSet["isInSet"]
+    isObjectShroudedForAction["isObjectShroudedForAction"]
+    isOffMap["isOffMap"]
+    isPermanentSound["isPermanentSound"]
+    isPlayerVotedOut["isPlayerVotedOut"]
+    isPossibleToMakeUnit["isPossibleToMakeUnit"]
+    isReady["isReady"]
+    isSatisfied["isSatisfied"]
+    isSlotLocalAlly["isSlotLocalAlly"]
+    isSpecificRiderFreeToExit["isSpecificRiderFreeToExit"]
+    isValidContainerFor["isValidContainerFor"]
+    isValidToExecute["isValidToExecute"]
+    iterateContained["iterateContained"]
+    iterateDrawablesInRegion["iterateDrawablesInRegion"]
+    JoinDirectConnectGame["JoinDirectConnectGame"]
+    joinGame["joinGame"]
+    KeepObjectDie__onDie["KeepObjectDie::onDie"]
+    KeyboardTextEntryInput["KeyboardTextEntryInput"]
+    LadderList__loadLocalLadders["LadderList::loadLocalLadders"]
+    LanGameOptionsMenuSystem["LanGameOptionsMenuSystem"]
+    LanLobbyMenuShutdown["LanLobbyMenuShutdown"]
+    LanLobbyMenuSystem["LanLobbyMenuSystem"]
+    LanLobbyMenuUpdate["LanLobbyMenuUpdate"]
+    LanMapSelectMenuInit["LanMapSelectMenuInit"]
+    LanMapSelectMenuSystem["LanMapSelectMenuSystem"]
+    lanUpdateSlotList["lanUpdateSlotList"]
+    listingGamesCallback["listingGamesCallback"]
+    load["load"]
+    loadDockPositions["loadDockPositions"]
+    loadGame["loadGame"]
+    loadMap["loadMap"]
+    loadMods["loadMods"]
+    loadPostProcess["loadPostProcess"]
+    loadPrisoner["loadPrisoner"]
+    LockWeaponCreate__onBuildComplete["LockWeaponCreate::onBuildComplete"]
+    lookForInnerTarget["lookForInnerTarget"]
+    maintainCurrentPositionThrust["maintainCurrentPositionThrust"]
+    maintainCurrentPositionWings["maintainCurrentPositionWings"]
+    makeStateMachine["makeStateMachine"]
+    mapListTooltipFunc["mapListTooltipFunc"]
+    markAsDetected["markAsDetected"]
+    MaxHealthUpgrade__upgradeImplementation["MaxHealthUpgrade::upgradeImplementation"]
+    MessageBoxOk["MessageBoxOk"]
+    MessageBoxYesNo["MessageBoxYesNo"]
+    MessageStream__propagateMessages["MessageStream::propagateMessages"]
+    ModelConditionUpgrade__upgradeImplementation["ModelConditionUpgrade::upgradeImplementation"]
+    ModelConditionUpgradeModuleData__buildFieldParse["ModelConditionUpgradeModuleData::buildFieldParse"]
+    moveObjectsForConstruction["moveObjectsForConstruction"]
+    MuLaw["MuLaw"]
+    MultiByteToWideCharSingleLine["MultiByteToWideCharSingleLine"]
+    MultiplayerSettings__addStartingMoneyChoice_const_Money___money__Bool_isDefault_["MultiplayerSettings::addStartingMoneyChoice(const Money & money, Bool isDefault)"]
+    nameToKey["nameToKey"]
+    nameToLowercaseKey["nameToLowercaseKey"]
+    NetCommandWrapperList__getReadyCommands["NetCommandWrapperList::getReadyCommands"]
+    NetCommandWrapperList__processWrapper["NetCommandWrapperList::processWrapper"]
+    NetCommandWrapperList__removeFromList["NetCommandWrapperList::removeFromList"]
+    NetCommandWrapperListNode__copyChunkData["NetCommandWrapperListNode::copyChunkData"]
+    NetworkDirectConnectInit["NetworkDirectConnectInit"]
+    NetworkDirectConnectSystem["NetworkDirectConnectSystem"]
+    neutronBlastToObject["neutronBlastToObject"]
+    newModule["newModule"]
+    newModuleDataFromINI["newModuleDataFromINI"]
+    newRoad___newBridge["newRoad / newBridge"]
+    newTemplate["newTemplate"]
+    newTerrain["newTerrain"]
+    nextToken["nextToken"]
+    normalizeAngle["normalizeAngle"]
+    NormalizeToRange["NormalizeToRange"]
+    objectEnteringInfluence["objectEnteringInfluence"]
+    objectEnteringInfluence_Object_obj_["objectEnteringInfluence(Object obj)"]
+    objectLeavingInfluence["objectLeavingInfluence"]
+    objectLeavingInfluence_Object_obj_["objectLeavingInfluence(Object obj)"]
+    OCLUpdate__setNextCreationFrame["OCLUpdate::setNextCreationFrame"]
+    OCLUpdate__update["OCLUpdate::update"]
+    onBodyDamageStateChange["onBodyDamageStateChange"]
+    onBuildComplete["onBuildComplete"]
+    onCapture["onCapture"]
+    onCollide["onCollide"]
+    onContaining["onContaining"]
+    onDamage["onDamage"]
+    onDie["onDie"]
+    onDie__["onDie()"]
+    onHealing["onHealing"]
+    onRemoving["onRemoving"]
+    open["open"]
+    openFile["openFile"]
+    operator_new_operator_delete["operator new/operator delete"]
+    operator__["operator()"]
+    operator____operator____operator___operator____operator___operator__["operator==, operator!=, operator<, operator<=, operator>, operator>="]
+    orderSlavesToAttackTarget["orderSlavesToAttackTarget"]
+    overrideAudioName__overrideLoopFlag__etc_["overrideAudioName, overrideLoopFlag, etc."]
+    overrideLoopFlag["overrideLoopFlag"]
+    parseAmount["parseAmount"]
+    ParseAsciiStringToGameInfo["ParseAsciiStringToGameInfo"]
+    parseCampaignDefinition["parseCampaignDefinition"]
+    parseCommandLine["parseCommandLine"]
+    parseCommonStuff["parseCommonStuff"]
+    parseDurationReal["parseDurationReal"]
+    parseImageCoords["parseImageCoords"]
+    parseImageStatus["parseImageStatus"]
+    parseLadder["parseLadder"]
+    parseMajorFXList["parseMajorFXList"]
+    parseMinorFXList["parseMinorFXList"]
+    parseMissionPart["parseMissionPart"]
+    parseMod["parseMod"]
+    parseNoAudio["parseNoAudio"]
+    parseNoLogOrCrash["parseNoLogOrCrash"]
+    parseObjectDefinition["parseObjectDefinition"]
+    parsePlayerTemplateDefinition["parsePlayerTemplateDefinition"]
+    ParsePolygonTriggersDataChunk["ParsePolygonTriggersDataChunk"]
+    parseProductionCostChange["parseProductionCostChange"]
+    parseProductionTimeChange["parseProductionTimeChange"]
+    parseProductionVeterancyLevel["parseProductionVeterancyLevel"]
+    parseSpecialPowerDefinition["parseSpecialPowerDefinition"]
+    parseStartMoney["parseStartMoney"]
+    parseText["parseText"]
+    parseTime["parseTime"]
+    parseTransitionToFX["parseTransitionToFX"]
+    parseTransitionToOCL["parseTransitionToOCL"]
+    parseVeterancyLevelFlags["parseVeterancyLevelFlags"]
+    PartitionSolver__solve["PartitionSolver::solve"]
+    PerfGather__startTimer__["PerfGather::startTimer()"]
+    PerfGather__stopTimer__["PerfGather::stopTimer()"]
+    PerfTimer__startTimer__["PerfTimer::startTimer()"]
+    PerfTimer__stopTimer__["PerfTimer::stopTimer()"]
+    pickAndMoveToInitialLocation["pickAndMoveToInitialLocation"]
+    placeMines__["placeMines()"]
+    playerJoinedCallback["playerJoinedCallback"]
+    playLogoMovie["playLogoMovie"]
+    playMovie["playMovie"]
+    pointInTrigger["pointInTrigger"]
+    populateBeacon["populateBeacon"]
+    populateButtonProc["populateButtonProc"]
+    populateCategoryBox["populateCategoryBox"]
+    PopulateColorComboBox["PopulateColorComboBox"]
+    PopulateInGameDiplomacyPopup["PopulateInGameDiplomacyPopup"]
+    populateMapListbox["populateMapListbox"]
+    populateOCLTimer["populateOCLTimer"]
+    PopulatePlayerInfoWindows["PopulatePlayerInfoWindows"]
+    PopulatePlayerTemplateComboBox["PopulatePlayerTemplateComboBox"]
+    PopulateRemoteIPComboBox["PopulateRemoteIPComboBox"]
+    PopulateReplayFileListbox["PopulateReplayFileListbox"]
+    populateSaveGameListbox["populateSaveGameListbox"]
+    PopulateStartingCashComboBox["PopulateStartingCashComboBox"]
+    populateStructureInventory["populateStructureInventory"]
+    PopulateTeamComboBox["PopulateTeamComboBox"]
+    PopupJoinGameInit["PopupJoinGameInit"]
+    PopupJoinGameInput["PopupJoinGameInput"]
+    PopupJoinGameSystem["PopupJoinGameSystem"]
+    PopupLadderSelectInit["PopupLadderSelectInit"]
+    PopupLadderSelectInput["PopupLadderSelectInput"]
+    PopupLadderSelectSystem["PopupLadderSelectSystem"]
+    positionStartSpots["positionStartSpots"]
+    PostToLanGameOptions["PostToLanGameOptions"]
+    preMainInitMemoryManager["preMainInitMemoryManager"]
+    PrintInfoRecursive["PrintInfoRecursive"]
+    PrintOffsetsFromControlBarParent["PrintOffsetsFromControlBarParent"]
+    privateAttackObject["privateAttackObject"]
+    privateAttackPosition["privateAttackPosition"]
+    privateExecuteRailedTransport["privateExecuteRailedTransport"]
+    privateForceAttackObject["privateForceAttackObject"]
+    processDamageToContained_Real_percentDamage_["processDamageToContained(Real percentDamage)"]
+    processDisconnectCommand["processDisconnectCommand"]
+    processMouseEvent["processMouseEvent"]
+    projectileFireAtObjectOrPosition["projectileFireAtObjectOrPosition"]
+    projectileHandleCollision["projectileHandleCollision"]
+    projectileLaunchAtObjectOrPosition["projectileLaunchAtObjectOrPosition"]
+    projectileNowJammed["projectileNowJammed"]
+    ProneUpdate__goProne["ProneUpdate::goProne"]
+    ProneUpdate__startProneEffects["ProneUpdate::startProneEffects"]
+    ProneUpdate__stopProneEffects["ProneUpdate::stopProneEffects"]
+    ProneUpdate__update["ProneUpdate::update"]
+    purgeDead["purgeDead"]
+    PushButtonImageDrawThree["PushButtonImageDrawThree"]
+    queueCreateUnit["queueCreateUnit"]
+    queueSend["queueSend"]
+    queueSupplyTruck["queueSupplyTruck"]
+    queueUpgrade["queueUpgrade"]
+    QuitMenuSystem["QuitMenuSystem"]
+    RadiusDecal__xferRadiusDecal["RadiusDecal::xferRadiusDecal"]
+    RadiusDecalTemplate__parseRadiusDecalTemplate["RadiusDecalTemplate::parseRadiusDecalTemplate"]
+    RailedTransportAIUpdate__aiDoCommand["RailedTransportAIUpdate::aiDoCommand"]
+    RaiseGSMessageBox["RaiseGSMessageBox"]
+    randomValue["randomValue"]
+    RankInfoStore__init["RankInfoStore::init"]
+    RebuildHoleExposeDie__onDie["RebuildHoleExposeDie::onDie"]
+    RecorderClass__appendNextCommand["RecorderClass::appendNextCommand"]
+    RecorderClass__logCRCMismatch["RecorderClass::logCRCMismatch"]
+    RecorderClass__logGameStart["RecorderClass::logGameStart"]
+    RecorderClass__readArgument["RecorderClass::readArgument"]
+    registerDrawable["registerDrawable"]
+    removeAllEffects["removeAllEffects"]
+    removeAudioEvent_AudioHandle_eventToRemove_["removeAudioEvent(AudioHandle eventToRemove)"]
+    removeFromContain_Object_rider__Bool_exposeStealthUnits_["removeFromContain(Object rider, Bool exposeStealthUnits)"]
+    removeFromContain_Object__Bool_["removeFromContain(Object, Bool)"]
+    removeObject["removeObject"]
+    removeObjectType["removeObjectType"]
+    removePowerBonus["removePowerBonus"]
+    RepairDockUpdate__action["RepairDockUpdate::action"]
+    RepairDockUpdate__xfer["RepairDockUpdate::xfer"]
+    repairStructure__["repairStructure()"]
+    ReplayMenuSystem["ReplayMenuSystem"]
+    reserveApproachPosition["reserveApproachPosition"]
+    reserveDoorForExit["reserveDoorForExit"]
+    reset["reset"]
+    resetSelfHealSupression["resetSelfHealSupression"]
+    resetStats["resetStats"]
+    reverseAnimateWindow["reverseAnimateWindow"]
+    reverseMotion["reverseMotion"]
+    roomKeyChangedCallback["roomKeyChangedCallback"]
+    runScript["runScript"]
+    saveGame["saveGame"]
+    SaveLoadMenuFullScreenInit["SaveLoadMenuFullScreenInit"]
+    SaveLoadMenuInit["SaveLoadMenuInit"]
+    SaveLoadMenuSystem["SaveLoadMenuSystem"]
+    ScienceStore__getPurchasableSciences_const_Player__ScienceVec___ScienceVec__["ScienceStore::getPurchasableSciences(const Player, ScienceVec&, ScienceVec&)"]
+    ScopedMutex___ScopedMutex["ScopedMutex::~ScopedMutex"]
+    ScopedMutex__ScopedMutex["ScopedMutex::ScopedMutex"]
+    seedRandom["seedRandom"]
+    selectFriends["selectFriends"]
+    selectTeamToBuild__["selectTeamToBuild()"]
+    sellObject["sellObject"]
+    sendChat__["sendChat()"]
+    sendFileAnnounce__["sendFileAnnounce()"]
+    setClientStatus_PUCStatus__Bool_["setClientStatus(PUCStatus, Bool)"]
+    setCommandButton["setCommandButton"]
+    setControlCommand["setControlCommand"]
+    SetDifficultyRadioButton["SetDifficultyRadioButton"]
+    setEaseTimes["setEaseTimes"]
+    setKeyDown["setKeyDown"]
+    setLogicalStatus_PUCStatus_["setLogicalStatus(PUCStatus)"]
+    setModelConditionState_ModelConditionFlagType_a_["setModelConditionState(ModelConditionFlagType a)"]
+    setMotion["setMotion"]
+    setPasswordMode["setPasswordMode"]
+    setScootParms["setScootParms"]
+    setTargetObject["setTargetObject"]
+    setTurretTargetPosition["setTurretTargetPosition"]
+    SetUpGameSpy["SetUpGameSpy"]
+    setWakeFrame["setWakeFrame"]
+    shotFired["shotFired"]
+    shouldSaveDrawable["shouldSaveDrawable"]
+    ShowControlBar["ShowControlBar"]
+    ShowDiplomacy["ShowDiplomacy"]
+    ShowDisconnectWindow["ShowDisconnectWindow"]
+    ShowEstablishConnectionsWindow["ShowEstablishConnectionsWindow"]
+    showGameSpyGameOptionsUnderlyingGUIElements["showGameSpyGameOptionsUnderlyingGUIElements"]
+    showGameSpyQMUnderlyingGUIElements["showGameSpyQMUnderlyingGUIElements"]
+    ShowInGameChat["ShowInGameChat"]
+    ShowUnderlyingGUIElements["ShowUnderlyingGUIElements"]
+    ShroudCrateCollide__ShroudCrateCollide["ShroudCrateCollide::ShroudCrateCollide"]
+    shutdownComplete["shutdownComplete"]
+    shutdownMemoryManager["shutdownMemoryManager"]
+    SignalUIInteraction["SignalUIInteraction"]
+    SinglePlayerMenuUpdate["SinglePlayerMenuUpdate"]
+    skip["skip"]
+    SkirmishMapSelectMenuInit["SkirmishMapSelectMenuInit"]
+    SkirmishMapSelectMenuSystem["SkirmishMapSelectMenuSystem"]
+    SnowManager__init["SnowManager::init"]
+    SoundManager__canPlayNow["SoundManager::canPlayNow"]
+    Speaker__say["Speaker::say"]
+    Speaker__update["Speaker::update"]
+    SpecialPowerCompletionDie__onDie["SpecialPowerCompletionDie::onDie"]
+    SpeechManager__init["SpeechManager::init"]
+    splitSegmentAtT["splitSegmentAtT"]
+    SpyVisionUpdate__activateSpyVision["SpyVisionUpdate::activateSpyVision"]
+    SpyVisionUpdate__update["SpyVisionUpdate::update"]
+    SpyVisionUpdate__upgradeImplementation["SpyVisionUpdate::upgradeImplementation"]
+    StackDump["StackDump"]
+    StackDumpFromContext["StackDumpFromContext"]
+    startCrippledEffects["startCrippledEffects"]
+    startPoisonedEffects["startPoisonedEffects"]
+    StartPressed["StartPressed"]
+    startSecondLife["startSecondLife"]
+    stdAngleDiff["stdAngleDiff"]
+    StealthUpgrade__["StealthUpgrade()"]
+    stopCrippledEffects["stopCrippledEffects"]
+    stopMovie["stopMovie"]
+    stopPoisonedEffects["stopPoisonedEffects"]
+    SubObjectsUpgrade__upgradeImplementation["SubObjectsUpgrade::upgradeImplementation"]
+    successNoQuitCallback["successNoQuitCallback"]
+    successQuitCallback["successQuitCallback"]
+    switchToState["switchToState"]
+    TearDownGameSpy["TearDownGameSpy"]
+    testCreationChance["testCreationChance"]
+    testForAttackingProc_Object_obj__void_userData_["testForAttackingProc(Object obj, void userData)"]
+    ToggleControlBar["ToggleControlBar"]
+    ToggleInGameChat["ToggleInGameChat"]
+    translateGameMessage["translateGameMessage"]
+    tryInfiltrationEvent["tryInfiltrationEvent"]
+    tryToEvacuate["tryToEvacuate"]
+    tryUnderAttackEvent["tryUnderAttackEvent"]
+    UnitCrateCollide__executeCrateBehavior["UnitCrateCollide::executeCrateBehavior"]
+    unloadNext["unloadNext"]
+    unloadPrisonersToPrison["unloadPrisonersToPrison"]
+    unselectOtherRadioOfGroup["unselectOtherRadioOfGroup"]
+    update["update"]
+    update__["update()"]
+    updateAnimateWindow["updateAnimateWindow"]
+    updateBio["updateBio"]
+    updateBounds["updateBounds"]
+    updateContextOCLTimer["updateContextOCLTimer"]
+    updateContextStructureInventory["updateContextStructureInventory"]
+    updateDisconnectStatus["updateDisconnectStatus"]
+    updateDrawable__["updateDrawable()"]
+    updateEndPos__["updateEndPos()"]
+    updateFindTarget["updateFindTarget"]
+    updateLadderDetails["updateLadderDetails"]
+    updateLoadProgress__["updateLoadProgress()"]
+    updateMenuActions["updateMenuActions"]
+    updateMouseData["updateMouseData"]
+    updateNumPlayersOnline__["updateNumPlayersOnline()"]
+    updateOCLTimerTextDisplay["updateOCLTimerTextDisplay"]
+    UpdateRemoteIPList["UpdateRemoteIPList"]
+    UpdateSlotList["UpdateSlotList"]
+    updateStartPos__["updateStartPos()"]
+    updateTGAtoDDS__["updateTGAtoDDS()"]
+    updateWaiting["updateWaiting"]
+    upgradeImplementation["upgradeImplementation"]
+    UpgradeMux__attemptUpgrade["UpgradeMux::attemptUpgrade"]
+    UpgradeMux__giveSelfUpgrade["UpgradeMux::giveSelfUpgrade"]
+    UpgradeMux__testUpgradeConditions["UpgradeMux::testUpgradeConditions"]
+    userMemoryAdjustPoolSize["userMemoryAdjustPoolSize"]
+    userMemoryManagerGetDmaParms["userMemoryManagerGetDmaParms"]
+    userMemoryManagerInitPools["userMemoryManagerInitPools"]
+    validate["validate"]
+    validateTarget["validateTarget"]
+    validUnderCursor["validUnderCursor"]
+    VeterancyGainCreate__onCreate["VeterancyGainCreate::onCreate"]
+    voteForPlayerDisconnect["voteForPlayerDisconnect"]
+    wasAudioNameOverriden__wasLoopFlagOverriden__etc_["wasAudioNameOverriden, wasLoopFlagOverriden, etc."]
+    WideCharStringToMultiByte["WideCharStringToMultiByte"]
+    WindowTranslator__translateGameMessage["WindowTranslator::translateGameMessage"]
+    WOLDisplaySlotList["WOLDisplaySlotList"]
+    WOLGameSetupMenuUpdate["WOLGameSetupMenuUpdate"]
+    WOLPositionStartSpots["WOLPositionStartSpots"]
+    WOLWelcomeMenuInit__["WOLWelcomeMenuInit()"]
+    WOLWelcomeMenuSystem__["WOLWelcomeMenuSystem()"]
+    WOLWelcomeMenuUpdate__["WOLWelcomeMenuUpdate()"]
+    write["write"]
+    WritePolygonTriggersDataChunk["WritePolygonTriggersDataChunk"]
+    WSYS_String__format["WSYS_String::format"]
+    WSYS_String__operator__["WSYS_String::operator+="]
+    WSYS_String__set["WSYS_String::set"]
+    xfer["xfer"]
+    xfer__["xfer()"]
+    xfer_Xfer_xfer_["xfer(Xfer xfer)"]
+    xferAsciiString["xferAsciiString"]
+    xferDrawableTOC["xferDrawableTOC"]
+    xferImplementation["xferImplementation"]
+    xferMapName["xferMapName"]
+    XferSave__beginBlock["XferSave::beginBlock"]
+    XferSave__close["XferSave::close"]
+    XferSave__endBlock["XferSave::endBlock"]
+    XferSave__open["XferSave::open"]
+    XferSave__xferAsciiString["XferSave::xferAsciiString"]
+    XferSave__xferImplementation["XferSave::xferImplementation"]
+    XferSave__xferSnapshot["XferSave::xferSnapshot"]
+    XferSave__xferUnicodeString["XferSave::xferUnicodeString"]
+    xferSaveData["xferSaveData"]
+    xferScienceType["xferScienceType"]
+    xferSnapshot["xferSnapshot"]
+    xferUnicodeString["xferUnicodeString"]
+    xferUpgradeMask["xferUpgradeMask"]
+    xferVersion["xferVersion"]
+  end
+
+  calculateAcademyAdvice --> evaluateTier1Advice
+  calculateAcademyAdvice --> evaluateTier2Advice
+  calculateAcademyAdvice --> evaluateTier3Advice
+  AsciiString__format --> format_va
+  AsciiString__concat --> ensureUniqueBufferOfSize
+  AsciiString__concat --> strlen
+  isPermanentSound --> BitTest
+  generateFilename --> adjustForLocalization
+  generateFilenamePrefix --> adjustForLocalization
+  CriticalSection__enter --> AutoPerfGather
+  CriticalSection__exit --> AutoPerfGather
+  overrideAudioName__overrideLoopFlag__etc_ --> m_overriddenFields
+  wasAudioNameOverriden__wasLoopFlagOverriden__etc_ --> m_overriddenFields
+  adjustPower_Int_powerDelta__Bool_adding_ --> addProduction
+  adjustPower_Int_powerDelta__Bool_adding_ --> addConsumption
+  objectEnteringInfluence_Object_obj_ --> addPowerBonus
+  objectLeavingInfluence_Object_obj_ --> removePowerBonus
+  stdAngleDiff --> normalizeAngle
+  saveGame --> xferSaveData
+  loadGame --> xferSaveData
+  deleteOverrides --> deleteInstance
+  PerfGather__startTimer__ --> GetPrecisionTimer
+  PerfGather__stopTimer__ --> GetPrecisionTimer
+  PerfTimer__startTimer__ --> GetPrecisionTimer
+  PerfTimer__stopTimer__ --> GetPrecisionTimer
+  parseStartMoney --> INI
+  parseProductionCostChange --> INI
+  parseProductionTimeChange --> INI
+  parseProductionVeterancyLevel --> INI
+  parsePlayerTemplateDefinition --> INI
+  isSatisfied --> calcNumPrereqUnitsOwned
+  ScopedMutex__ScopedMutex --> DEBUG_LOG
+  findBestInfo --> findBestInfoSlow
+  findTemplate --> findTemplateInternal
+  format__format_va --> vsprintf
+  FXNugget__doFXObj --> doFXPos
+  FXList__doFXPos --> doFXPos
+  GadgetSliderGetMinMax --> SliderData
+  GadgetSliderGetPosition --> SliderData
+  HeaderTemplateManager__init --> populateGameFonts
+  RadiusDecal__xferRadiusDecal --> Xfer
+  RadiusDecalTemplate__parseRadiusDecalTemplate --> INI
+  addRayEffect --> findEntry
+  deleteRayEffect --> findEntry
+  getRayEffectData --> findEntry
+  buildSpecificAITeam__ --> isAGoodIdeaToBuildTeam
+  selectTeamToBuild__ --> isAGoodIdeaToBuildTeam
+  crc_Xfer_xfer_ --> Xfer
+  xfer_Xfer_xfer_ --> Xfer
+  ActiveShroudUpgradeModuleData__buildFieldParse --> MultiIniFieldParse
+  ArmorUpgrade_constructor --> UpgradeModule
+  onCollide --> executeCrateBehavior
+  DamDieModuleData__buildFieldParse --> MultiIniFieldParse
+  projectileLaunchAtObjectOrPosition --> calcFlightPath
+  FirestormDynamicGeometryInfoUpdate__update --> doDamageScan
+  FireWeaponPowerModuleData__buildFieldParse --> MultiIniFieldParse
+  update --> purgeDead
+  onDie --> killAllParkedUnits
+  HealCrateCollide__ --> CrateCollide
+  clientUpdate --> updateStartPos
+  clientUpdate --> updateEndPos
+  ModelConditionUpgradeModuleData__buildFieldParse --> MultiIniFieldParse
+  addToContain_Object_ --> addToContainList
+  addToContain_Object_ --> addOrRemoveObjFromWorld
+  removeFromContain_Object__Bool_ --> addOrRemoveObjFromWorld
+  queueCreateUnit --> addToProductionQueue
+  queueUpgrade --> addToProductionQueue
+  onDie --> cancelAndRefundAllProduction
+  RailedTransportAIUpdate__aiDoCommand --> privateExecuteRailedTransport
+  update --> doPullInDocking
+  update --> doPushOutDocking
+  update --> unloadNext
+  ShroudCrateCollide__ShroudCrateCollide --> CrateCollide
+  doSpecialPower --> initiateIntentToDoSpecialPower
+  doSpecialPower --> triggerSpecialPower
+  SpyVisionUpdate__update --> doActivationWork
+  SpyVisionUpdate__update --> isUpgradeActive
+  SpyVisionUpdate__activateSpyVision --> doActivationWork
+  SpyVisionUpdate__upgradeImplementation --> getUpgradeActivationMasks
+  SpyVisionUpdate__upgradeImplementation --> performUpgradeFX
+  SpyVisionUpdate__upgradeImplementation --> processUpgradeRemoval
+  StealthUpgrade__ --> UpgradeModule
+  update__ --> doPhaseStuff
+  applyCrushingDamage__ --> doDamageLine
+  beginStructureTopple --> doPhaseStuff
+  applyCrushingDamage --> doDamageLine
+  UpgradeMux__attemptUpgrade --> upgradeImplementation
+  UpgradeMux__attemptUpgrade --> performUpgradeFX
+  UpgradeMux__attemptUpgrade --> giveSelfUpgrade
+  UpgradeMux__testUpgradeConditions --> getUpgradeActivationMasks
+  addPoint --> updateBounds
+  processDisconnectCommand --> processDisconnectKeepAlive
+  processDisconnectCommand --> processDisconnectPlayer
+  voteForPlayerDisconnect --> sendVoteCommand
+  updateDisconnectStatus --> isPlayerVotedOut
+  generateFilename --> generateFilenamePrefix
+  overrideLoopFlag --> BitSet
+  overrideLoopFlag --> BitClear
+  getApproximateLength --> splitSegmentAtT
+  splitSegmentAtT --> evaluateBezSegmentAtT
+  splitSegmentAtT --> add
+  parseNoLogOrCrash --> DEBUG_CRASH
+  parseCommandLine --> DEBUG_LOG
+  parseAmount --> parseCommonStuff
+  parseMajorFXList --> parseCommonStuff
+  parseMinorFXList --> parseCommonStuff
+  parseTime --> parseCommonStuff
+  init_int_argc__char_argv___ --> parseCommandLine
+  init --> testMinimumRequirements
+  init --> refreshCustomStaticLODLevel
+  findStaticLODLevel --> testMinimumRequirements
+  applyStaticLODLevel --> refreshCustomStaticLODLevel
+  ControlBar__parseCommandButtonDefinition --> BitTest
+  MessageStream__propagateMessages --> translateGameMessage
+  nameToKey --> newInstance
+  nameToKey --> strcmp
+  nameToLowercaseKey --> calcHashForLowercaseString
+  nameToLowercaseKey --> newInstance
+  PartitionSolver__solve --> DEBUG_CRASH
+  GetGameLogicRandomValue --> randomValue
+  GetGameClientRandomValue --> randomValue
+  GetGameLogicRandomValueReal --> randomValue
+  InitRandom --> seedRandom
+  InitGameLogicRandom --> seedRandom
+  RecorderClass__logGameStart --> fseek
+  RecorderClass__logGameStart --> fwrite
+  RecorderClass__logGameStart --> time
+  RecorderClass__logCRCMismatch --> fseek
+  RecorderClass__logCRCMismatch --> fwrite
+  RecorderClass__logCRCMismatch --> DEBUG_LOG
+  RecorderClass__appendNextCommand --> fread
+  RecorderClass__appendNextCommand --> newInstance
+  RecorderClass__readArgument --> fread
+  canGetRepairedAt --> isObjectShroudedForAction
+  canGetRepairedAt --> getBodyModule
+  canDoSpecialPower --> getSpecialPowerModule
+  canFireWeaponAtObject --> getAbleToAttackSpecificObject
+  adjustPower --> addProduction
+  adjustPower --> addConsumption
+  objectEnteringInfluence --> addConsumption
+  objectEnteringInfluence --> addProduction
+  objectLeavingInfluence --> addConsumption
+  objectLeavingInfluence --> addProduction
+  addPowerBonus --> addProduction
+  removePowerBonus --> addProduction
+  addObjectBuilt --> isKindOfMulti
+  addObjectBuilt --> isKindOf
+  addObjectDestroyed --> isKindOfMulti
+  addObjectDestroyed --> isKindOf
+  addObjectDestroyed --> testStatus
+```
+
+## Subsystem Dependencies
+
+Cross-subsystem call edges. Arrow labels show call counts.
+
+```mermaid
+%%{ init: { 'theme': 'dark' } }%%
+graph TD
+
+  GeneralsMD["GeneralsMD (4559 funcs)"]
+
+```
+
+## Statistics
+
+- Total functions documented: 4559
+- Total call edges: 1760
+- Subsystems: 1
+

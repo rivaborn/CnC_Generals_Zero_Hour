@@ -1,0 +1,287 @@
+﻿# Call Graph & Dependency Diagrams
+
+Auto-generated from per-file architecture docs.
+
+## Function Call Graph
+
+Showing functions with 2+ incoming calls. Limited to 150 edges.
+
+```mermaid
+%%{ init: { 'theme': 'dark', 'flowchart': { 'curve': 'basis' } } }%%
+graph LR
+
+  subgraph GeneralsMD
+    adjustTransformMtx["adjustTransformMtx"]
+    allocate["allocate"]
+    allocateEdgingBuffers["allocateEdgingBuffers"]
+    buildSegments["buildSegments"]
+    Cast_Ray["Cast_Ray"]
+    castRay["castRay"]
+    closeArchiveFile["closeArchiveFile"]
+    closeKeyboard["closeKeyboard"]
+    closeMouse["closeMouse"]
+    createDirectory["createDirectory"]
+    createEmitters["createEmitters"]
+    doDrawModule["doDrawModule"]
+    doDrawModule__["doDrawModule()"]
+    doesFileExist["doesFileExist"]
+    doTesselatedUpdate["doTesselatedUpdate"]
+    draw["draw"]
+    drawButtonText["drawButtonText"]
+    drawFramerateBar["drawFramerateBar"]
+    drawListBoxText["drawListBoxText"]
+    drawMoveHints["drawMoveHints"]
+    drawProps["drawProps"]
+    drawRadioButtonText["drawRadioButtonText"]
+    drawStaticTextText["drawStaticTextText"]
+    dumpModelAssets["dumpModelAssets"]
+    enableEmitters["enableEmitters"]
+    fillVBRecursive["fillVBRecursive"]
+    flagOccludedObjects["flagOccludedObjects"]
+    FlatHeightMapRenderObjClass__Render["FlatHeightMapRenderObjClass::Render"]
+    flushTranslucentObjects["flushTranslucentObjects"]
+    freeDisplayString["freeDisplayString"]
+    getCapsState["getCapsState"]
+    getFileInfo["getFileInfo"]
+    getFileListInDirectory["getFileListInDirectory"]
+    getKey["getKey"]
+    getLayerHeight["getLayerHeight"]
+    getMouseEvent["getMouseEvent"]
+    getPerformanceCounter["getPerformanceCounter"]
+    getRGBDataForWidth["getRGBDataForWidth"]
+    getUVData["getUVData"]
+    GrannyRenderObjClass__Set_Animation["GrannyRenderObjClass::Set_Animation"]
+    init["init"]
+    init__["init()"]
+    initCursorResources["initCursorResources"]
+    initData["initData"]
+    initRopeParms__["initRopeParms()"]
+    killLowestPrioritySoundImmediately_AudioEventRTS_event_["killLowestPrioritySoundImmediately(AudioEventRTS event)"]
+    loadBigFilesFromDirectory["loadBigFilesFromDirectory"]
+    loadMap["loadMap"]
+    loadText["loadText"]
+    makeOrUpdateLine["makeOrUpdateLine"]
+    MapObject__duplicate["MapObject::duplicate"]
+    newDisplayString["newDisplayString"]
+    notifyOfAudioCompletion_UnsignedInt_audioCompleted__UnsignedInt_flags_["notifyOfAudioCompletion(UnsignedInt audioCompleted, UnsignedInt flags)"]
+    openFile["openFile"]
+    openKeyboard["openKeyboard"]
+    openMouse["openMouse"]
+    parseAnimation["parseAnimation"]
+    playAudioEvent_AudioEventRTS_event_["playAudioEvent(AudioEventRTS event)"]
+    processRequestList__["processRequestList()"]
+    renderBibs["renderBibs"]
+    Reset_D3D_Device["Reset_D3D_Device"]
+    Set_Name["Set_Name"]
+    setCursor["setCursor"]
+    setHidden["setHidden"]
+    setMouseLimits["setMouseLimits"]
+    takeScreenShot["takeScreenShot"]
+    tossSegments__["tossSegments()"]
+    update["update"]
+    updateDrawModuleSupplyStatus["updateDrawModuleSupplyStatus"]
+    updateTreadObjects["updateTreadObjects"]
+    updateTreadPositions["updateTreadPositions"]
+    W3DFunctionLexicon__init["W3DFunctionLexicon::init"]
+    W3DGadgetComboBoxDraw["W3DGadgetComboBoxDraw"]
+    W3DGadgetComboBoxImageDraw["W3DGadgetComboBoxImageDraw"]
+    W3DGadgetHorizontalSliderDraw["W3DGadgetHorizontalSliderDraw"]
+    W3DGadgetHorizontalSliderImageDraw["W3DGadgetHorizontalSliderImageDraw"]
+    W3DGadgetHorizontalSliderImageDrawA["W3DGadgetHorizontalSliderImageDrawA"]
+    W3DGadgetHorizontalSliderImageDrawB["W3DGadgetHorizontalSliderImageDrawB"]
+    W3DGadgetListBoxDraw["W3DGadgetListBoxDraw"]
+    W3DGadgetListBoxImageDraw["W3DGadgetListBoxImageDraw"]
+    W3DGadgetProgressBarDraw["W3DGadgetProgressBarDraw"]
+    W3DGadgetProgressBarImageDraw["W3DGadgetProgressBarImageDraw"]
+    W3DGadgetProgressBarImageDrawA["W3DGadgetProgressBarImageDrawA"]
+    W3DGadgetPushButtonDraw["W3DGadgetPushButtonDraw"]
+    W3DGadgetPushButtonImageDraw["W3DGadgetPushButtonImageDraw"]
+    W3DGadgetPushButtonImageDrawOne["W3DGadgetPushButtonImageDrawOne"]
+    W3DGadgetPushButtonImageDrawThree["W3DGadgetPushButtonImageDrawThree"]
+    W3DGadgetRadioButtonDraw["W3DGadgetRadioButtonDraw"]
+    W3DGadgetRadioButtonImageDraw["W3DGadgetRadioButtonImageDraw"]
+    W3DGadgetStaticTextDraw["W3DGadgetStaticTextDraw"]
+    W3DGadgetStaticTextImageDraw["W3DGadgetStaticTextImageDraw"]
+    W3DGadgetTabControlDraw["W3DGadgetTabControlDraw"]
+    W3DGadgetTabControlImageDraw["W3DGadgetTabControlImageDraw"]
+    W3DGadgetTextEntryDraw["W3DGadgetTextEntryDraw"]
+    W3DGadgetTextEntryImageDraw["W3DGadgetTextEntryImageDraw"]
+    W3DGadgetVerticalSliderDraw["W3DGadgetVerticalSliderDraw"]
+    W3DGadgetVerticalSliderImageDraw["W3DGadgetVerticalSliderImageDraw"]
+    W3DGameWinDefaultDraw["W3DGameWinDefaultDraw"]
+    W3DMainMenuButtonDropShadowDraw["W3DMainMenuButtonDropShadowDraw"]
+    W3DMainMenuDraw["W3DMainMenuDraw"]
+    W3DMainMenuInit["W3DMainMenuInit"]
+    W3DOverlordTruckDraw__setHidden["W3DOverlordTruckDraw::setHidden"]
+    W3DOverlordTruckDrawModuleData__buildFieldParse["W3DOverlordTruckDrawModuleData::buildFieldParse"]
+    W3DScienceModelDraw__doDrawModule["W3DScienceModelDraw::doDrawModule"]
+    W3DScienceModelDrawModuleData__buildFieldParse["W3DScienceModelDrawModuleData::buildFieldParse"]
+    W3DTreeBuffer__updateSway["W3DTreeBuffer::updateSway"]
+    W3DTreeBuffer__xfer["W3DTreeBuffer::xfer"]
+    W3DWaypointBuffer__drawWaypoints["W3DWaypointBuffer::drawWaypoints"]
+    WorldHeightMap__getRawTileData["WorldHeightMap::getRawTileData"]
+    WorldHeightMap__getTerrainColorAt["WorldHeightMap::getTerrainColorAt"]
+    WorldHeightMap__getTerrainTexture["WorldHeightMap::getTerrainTexture"]
+    xfer["xfer"]
+  end
+
+  W3DOverlordTruckDrawModuleData__buildFieldParse --> MultiIniFieldParse
+  W3DOverlordTruckDraw__setHidden --> setHidden
+  W3DScienceModelDrawModuleData__buildFieldParse --> MultiIniFieldParse
+  W3DScienceModelDraw__doDrawModule --> doDrawModule
+  doDrawModule --> getDrawable
+  doDrawModule --> getObject
+  doDrawModule --> getContainedBy
+  doDrawModule --> getContain
+  doDrawModule --> isEnclosingContainerFor
+  doDrawModule --> getCurrentWorldspaceClientBonePositions
+  doDrawModule --> getTransformMatrix
+  adjustTransformMtx --> getDrawable
+  adjustTransformMtx --> getObject
+  adjustTransformMtx --> getContainedBy
+  adjustTransformMtx --> getContain
+  adjustTransformMtx --> isEnclosingContainerFor
+  adjustTransformMtx --> getCurrentWorldspaceClientBonePositions
+  adjustTransformMtx --> getTransformMatrix
+  xfer --> xferVersion
+  doDrawModule --> setColorTintEnvelope
+  doDrawModule --> notifyDrawableDependencyCleared
+  doDrawModule --> draw
+  setHidden --> setDrawableHidden
+  doDrawModule --> makeOrUpdateLine
+  initRopeParms__ --> buildSegments
+  doDrawModule__ --> buildSegments
+  doDrawModule --> updateTreadPositions
+  doDrawModule --> enableEmitters
+  enableEmitters --> createEmitters
+  W3DGadgetComboBoxDraw --> winGetScreenPosition
+  W3DGadgetComboBoxDraw --> winGetSize
+  W3DGadgetComboBoxDraw --> winFontHeight
+  W3DGadgetComboBoxDraw --> winGetDisabledTextColor
+  W3DGadgetComboBoxDraw --> winGetDisabledTextBorderColor
+  W3DGadgetComboBoxDraw --> winGetHiliteTextColor
+  W3DGadgetComboBoxDraw --> winGetHiliteTextBorderColor
+  W3DGadgetComboBoxDraw --> winGetEnabledTextColor
+  W3DGadgetComboBoxDraw --> winGetEnabledTextBorderColor
+  W3DGadgetComboBoxDraw --> winOpenRect
+  W3DGadgetComboBoxDraw --> winFillRect
+  W3DGadgetComboBoxImageDraw --> winGetScreenPosition
+  W3DGadgetComboBoxImageDraw --> winGetSize
+  W3DGadgetComboBoxImageDraw --> winGetDisabledTextColor
+  W3DGadgetComboBoxImageDraw --> winGetDisabledTextBorderColor
+  W3DGadgetComboBoxImageDraw --> winGetHiliteTextColor
+  W3DGadgetComboBoxImageDraw --> winGetHiliteTextBorderColor
+  W3DGadgetComboBoxImageDraw --> winGetEnabledTextColor
+  W3DGadgetComboBoxImageDraw --> winGetEnabledTextBorderColor
+  W3DGadgetComboBoxImageDraw --> winDrawImage
+  W3DGadgetComboBoxImageDraw --> winFontHeight
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetDisabledBorderColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetDisabledColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetHiliteBorderColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetHiliteColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetEnabledBorderColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetEnabledColor
+  W3DGadgetHorizontalSliderImageDraw --> GadgetSliderGetHiliteImageLeft
+  W3DGadgetHorizontalSliderImageDraw --> GadgetSliderGetDisabledImageRight
+  W3DGadgetHorizontalSliderImageDraw --> GadgetSliderGetDisabledImageLeft
+  W3DGadgetHorizontalSliderImageDrawB --> GadgetSliderGetHiliteImageLeft
+  W3DGadgetHorizontalSliderImageDrawB --> GadgetSliderGetDisabledImageLeft
+  W3DGadgetHorizontalSliderImageDrawB --> GadgetSliderGetDisabledImageRight
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetDisabledImageLeft
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetDisabledImageRight
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetHiliteImageLeft
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetHiliteImageCenter
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetHiliteImageSmallCenter
+  W3DGadgetListBoxDraw --> drawListBoxText
+  W3DGadgetListBoxImageDraw --> drawListBoxText
+  W3DGadgetPushButtonDraw --> drawButtonText
+  W3DGadgetPushButtonImageDraw --> W3DGadgetPushButtonImageDrawThree
+  W3DGadgetPushButtonImageDraw --> W3DGadgetPushButtonImageDrawOne
+  W3DGadgetPushButtonImageDrawOne --> drawButtonText
+  W3DGadgetPushButtonImageDrawThree --> drawButtonText
+  W3DGadgetRadioButtonDraw --> drawRadioButtonText
+  W3DGadgetRadioButtonImageDraw --> drawRadioButtonText
+  W3DGadgetStaticTextDraw --> drawStaticTextText
+  W3DGadgetStaticTextImageDraw --> drawStaticTextText
+  W3DGadgetTabControlDraw --> W3DGameWinDefaultDraw
+  W3DGadgetTabControlDraw --> winGetScreenPosition
+  W3DGadgetTabControlDraw --> winGetSize
+  W3DGadgetTabControlDraw --> winDrawBorder
+  W3DGadgetTabControlDraw --> winOpenRect
+  W3DGadgetTabControlDraw --> winFillRect
+  W3DGadgetTabControlImageDraw --> W3DGameWinDefaultDraw
+  W3DGadgetTabControlImageDraw --> winGetScreenPosition
+  W3DGadgetTabControlImageDraw --> winGetSize
+  W3DGadgetTabControlImageDraw --> winDrawBorder
+  W3DGadgetTabControlImageDraw --> winDrawImage
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetDisabledBorderColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetDisabledColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetHiliteBorderColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetHiliteColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetEnabledBorderColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetEnabledColor
+  W3DGadgetVerticalSliderImageDraw --> GadgetSliderGetHiliteImageCenter
+  W3DGadgetVerticalSliderImageDraw --> GadgetSliderGetHiliteImageSmallCenter
+  allocateEdgingBuffers --> NEW_REF
+  dumpModelAssets --> fopen
+  newDisplayString --> newInstance
+  loadText --> fopen
+  flagOccludedObjects --> Cast_Ray
+  castRay --> Cast_Ray
+  initData --> NEW_REF
+  doTesselatedUpdate --> fillVBRecursive
+  W3DTreeBuffer__xfer --> xferVersion
+  MapObject__duplicate --> newInstance
+  WorldHeightMap__getTerrainColorAt --> getRGBDataForWidth
+  WorldHeightMap__getRawTileData --> getRGBDataForWidth
+  openFile --> getArchivedFileInfo
+  openFile --> newInstance
+  getFileInfo --> getArchivedFileInfo
+  init --> loadBigFilesFromDirectory
+  openFile --> createDirectory
+  getFileListInDirectory --> FindFirstFile
+  getFileListInDirectory --> FindClose
+  getFileInfo --> FindFirstFile
+  getFileInfo --> FindClose
+  openKeyboard --> closeKeyboard
+  openKeyboard --> DirectInput8Create
+  openKeyboard --> CreateDevice
+  openKeyboard --> SetDataFormat
+  openKeyboard --> SetCooperativeLevel
+  openKeyboard --> SetProperty
+  openKeyboard --> Acquire
+  closeKeyboard --> Unacquire
+  closeKeyboard --> Release
+  getKey --> Acquire
+  getKey --> GetDeviceData
+  init --> openKeyboard
+  openMouse --> DirectInput8Create
+  openMouse --> CreateDevice
+  openMouse --> SetDataFormat
+  openMouse --> SetCooperativeLevel
+  openMouse --> SetProperty
+  openMouse --> Acquire
+  closeMouse --> Unacquire
+  closeMouse --> Release
+  getMouseEvent --> GetDeviceData
+  getMouseEvent --> Acquire
+```
+
+## Subsystem Dependencies
+
+Cross-subsystem call edges. Arrow labels show call counts.
+
+```mermaid
+%%{ init: { 'theme': 'dark' } }%%
+graph TD
+
+  GeneralsMD["GeneralsMD (831 funcs)"]
+
+```
+
+## Statistics
+
+- Total functions documented: 831
+- Total call edges: 333
+- Subsystems: 1
+

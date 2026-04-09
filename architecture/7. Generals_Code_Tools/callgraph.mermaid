@@ -1,0 +1,614 @@
+﻿%%{ init: { 'theme': 'dark', 'flowchart': { 'curve': 'basis' } } }%%
+graph LR
+
+  subgraph Generals
+    _Application__GetRange["_Application::GetRange"]
+    _dictToScripts["_dictToScripts"]
+    _euler_unpack_order["_euler_unpack_order"]
+    _floater_dialog_proc["_floater_dialog_proc"]
+    _logdata_dialog_proc["_logdata_dialog_proc"]
+    _logdata_thread_function["_logdata_thread_function"]
+    _plantGroveInBox["_plantGroveInBox"]
+    _UpdatePauseButton["_UpdatePauseButton"]
+    activate["activate"]
+    activate__["activate()"]
+    add_node["add_node"]
+    AddAndDoUndoable["AddAndDoUndoable"]
+    addImage["addImage"]
+    addObj["addObj"]
+    addObject["addObject"]
+    addRoad["addRoad"]
+    addScrollbar["addScrollbar"]
+    addTerrain["addTerrain"]
+    addWindow["addWindow"]
+    addWindowToTree["addWindowToTree"]
+    adjustCount_PolygonTrigger_trigger__Int_firstPt__Int_lastPt__Int_desiredPointCount_["adjustCount(PolygonTrigger trigger, Int firstPt, Int lastPt, Int desiredPointCount)"]
+    AdjustVariable["AdjustVariable"]
+    Append_Set["Append_Set"]
+    AppendMessage["AppendMessage"]
+    applyRamp["applyRamp"]
+    BaseBuildProps__OnInitDialog["BaseBuildProps::OnInitDialog"]
+    BaseBuildProps__OnOK["BaseBuildProps::OnOK"]
+    Bin__Add["Bin::Add"]
+    Bin__Get["Bin::Get"]
+    Bin__GetBinItem["Bin::GetBinItem"]
+    BinID__Get["BinID::Get"]
+    blendTile["blendTile"]
+    BonePickerClass__HitTest["BonePickerClass::HitTest"]
+    BooleanVectorClass__Fixup["BooleanVectorClass::Fixup"]
+    BooleanVectorClass__operator__["BooleanVectorClass::operator[]"]
+    BooleanVectorClass__operator_["BooleanVectorClass::operator="]
+    Build_Packet_CRC["Build_Packet_CRC"]
+    buildMapPreviewTexture["buildMapPreviewTexture"]
+    calcAngle["calcAngle"]
+    calcRelationStr["calcRelationStr"]
+    CallbackEditorDialogProc["CallbackEditorDialogProc"]
+    cat["cat"]
+    CD_Volume_Verification["CD_Volume_Verification"]
+    checkBoxPropertiesCallback["checkBoxPropertiesCallback"]
+    checkMatches["checkMatches"]
+    Cleanup_Orthogonal_Matrix["Cleanup_Orthogonal_Matrix"]
+    clip_poly["clip_poly"]
+    clip_tri_to_slab["clip_tri_to_slab"]
+    comboBoxPropertiesCallback["comboBoxPropertiesCallback"]
+    ComInit___ComInit__["ComInit::~ComInit()"]
+    ComInit__ComInit__["ComInit::ComInit()"]
+    CommonDialogInitialize["CommonDialogInitialize"]
+    compress_W3dTimeCodedBitChannelStruct__c_["compress(W3dTimeCodedBitChannelStruct  c)"]
+    connectAndLoop["connectAndLoop"]
+    Const_Cast["Const_Cast"]
+    copy_app_data_cf["copy_app_data_cf"]
+    Create["Create"]
+    Create_Form["Create_Form"]
+    CreateTranslationTable["CreateTranslationTable"]
+    createWindow["createWindow"]
+    CritSec__lock_int_refcount_["CritSec::lock(int refcount)"]
+    CritSec__unlock_void_["CritSec::unlock(void)"]
+    cutSelectedToClipboard["cutSelectedToClipboard"]
+    DebugCrash["DebugCrash"]
+    DebugLog["DebugLog"]
+    Decrypt["Decrypt"]
+    Delete_Set["Delete_Set"]
+    deleteSelectedPolygon["deleteSelectedPolygon"]
+    Dialog_Proc["Dialog_Proc"]
+    dialogProc["dialogProc"]
+    DialogProc__["DialogProc()"]
+    Dictionary__add["Dictionary::add"]
+    Dictionary__getValue["Dictionary::getValue"]
+    Dictionary__remove["Dictionary::remove"]
+    Dictionary__shrink_expand["Dictionary::shrink/expand"]
+    DisconnectedCallback["DisconnectedCallback"]
+    DisplacementMapProc["DisplacementMapProc"]
+    DisplayHelp["DisplayHelp"]
+    Do_Modal__["Do_Modal()"]
+    doCrashBox["doCrashBox"]
+    DoDataExchange["DoDataExchange"]
+    DoModal["DoModal"]
+    DoModal__["DoModal()"]
+    downloadNextQueuedFile["downloadNextQueuedFile"]
+    draw["draw"]
+    drawContours["drawContours"]
+    DrawMyTexture__["DrawMyTexture()"]
+    DrawObject__Render["DrawObject::Render"]
+    duplicateSelected["duplicateSelected"]
+    duplicateWindow["duplicateWindow"]
+    Dynamic_Cast["Dynamic_Cast"]
+    DynamicVectorClass_T___Add["DynamicVectorClass<T>::Add"]
+    DynamicVectorClass_T___Delete["DynamicVectorClass<T>::Delete"]
+    Eat_Spaces_char_string_["Eat_Spaces(char string)"]
+    EditAction__OnInitDialog["EditAction::OnInitDialog"]
+    EditAction__OnNotify["EditAction::OnNotify"]
+    EditAction__OnSelchangeScriptActionType["EditAction::OnSelchangeScriptActionType"]
+    EditAction__OnTimer["EditAction::OnTimer"]
+    EditCoordParameter__DoDataExchange["EditCoordParameter::DoDataExchange"]
+    EditGroup__DoDataExchange["EditGroup::DoDataExchange"]
+    EditGroup__OnInitDialog["EditGroup::OnInitDialog"]
+    EditObjectParameter__addObject["EditObjectParameter::addObject"]
+    EditObjectParameter__addObjectLists["EditObjectParameter::addObjectLists"]
+    EditObjectParameter__OnInitDialog["EditObjectParameter::OnInitDialog"]
+    editProc["editProc"]
+    Enable_Stage["Enable_Stage"]
+    enableUI["enableUI"]
+    Encrypt["Encrypt"]
+    EulerAnglesClass__From_Matrix["EulerAnglesClass::From_Matrix"]
+    EulerAnglesClass__To_Matrix["EulerAnglesClass::To_Matrix"]
+    ExecuteDlgInit__LPVOID_version_["ExecuteDlgInit (LPVOID version)"]
+    ExecuteDlgInit__resource_name_version_["ExecuteDlgInit (resource name version)"]
+    expand["expand"]
+    export_tree_settings_cf["export_tree_settings_cf"]
+    ExportLog__printf["ExportLog::printf"]
+    ExportLog__rprintf["ExportLog::rprintf"]
+    extendImageEdges["extendImageEdges"]
+    File__close["File::close"]
+    File__open["File::open"]
+    File__position["File::position"]
+    File__printf["File::printf"]
+    File__size["File::size"]
+    FileD___FileD["FileD::~FileD"]
+    FileD__FileD["FileD::FileD"]
+    FileD__print["FileD::print"]
+    findOrAdd["findOrAdd"]
+    fixup_matrix["fixup_matrix"]
+    FloaterDialogClass__Create["FloaterDialogClass::Create"]
+    FloaterDialogClass__Dialog_Proc["FloaterDialogClass::Dialog_Proc"]
+    fnFormProc["fnFormProc"]
+    formatConditionText["formatConditionText"]
+    Free_Sets_List["Free_Sets_List"]
+    GadgetTabControlUpdatePaneNames["GadgetTabControlUpdatePaneNames"]
+    galloc["galloc"]
+    GameMtlDlg__Build_Dialog["GameMtlDlg::Build_Dialog"]
+    GameMtlDlg__ReloadDialog["GameMtlDlg::ReloadDialog"]
+    GameMtlDlg__Set_Pass_Count_Dialog["GameMtlDlg::Set_Pass_Count_Dialog"]
+    GameMtlFormClass__DeleteThis["GameMtlFormClass::DeleteThis"]
+    GameMtlFormClass__SetThing["GameMtlFormClass::SetThing"]
+    GameMtlPassDlg__DialogProc["GameMtlPassDlg::DialogProc"]
+    gclose["gclose"]
+    generateINIFile["generateINIFile"]
+    generateTexture["generateTexture"]
+    genericPropertiesCallback["genericPropertiesCallback"]
+    get_absolute_path_cf["get_absolute_path_cf"]
+    Get_Bit["Get_Bit"]
+    get_hierarchy_file_cf["get_hierarchy_file_cf"]
+    GetBytes_void_ptr__UInt32_bytes_["GetBytes(void ptr, UInt32 bytes)"]
+    GetCDClass__Get_CD_Drive_For_This_Volume["GetCDClass::Get_CD_Drive_For_This_Volume"]
+    GetCDClass__Get_First_CD_Drive["GetCDClass::Get_First_CD_Drive"]
+    getInfoText["getInfoText"]
+    getInt_IN_Wstring___key__sint32__value__IN_char_section_["getInt(IN Wstring &_key, sint32 &value, IN char section)"]
+    getInt_Wstring__key__sint32__value_["getInt(Wstring &key, sint32 &value)"]
+    GetStateInfo["GetStateInfo"]
+    GetTimezoneInfo["GetTimezoneInfo"]
+    getToken["getToken"]
+    GetVersionInfo["GetVersionInfo"]
+    getWarningText["getWarningText"]
+    gfree["gfree"]
+    glen["glen"]
+    gopen["gopen"]
+    gread["gread"]
+    GridSettingsDialogProc["GridSettingsDialogProc"]
+    gseek["gseek"]
+    gtell["gtell"]
+    gwopen["gwopen"]
+    gwrite["gwrite"]
+    HandleCommonDialogMessages["HandleCommonDialogMessages"]
+    handlePlayerJoined["handlePlayerJoined"]
+    handlePlayerLeft["handlePlayerLeft"]
+    IGROptionsClass__Init["IGROptionsClass::Init"]
+    IGROptionsClass__Set_Options["IGROptionsClass::Set_Options"]
+    ImageInfo___ImageInfo__["ImageInfo::~ImageInfo()"]
+    ImagePacker__packImages["ImagePacker::packImages"]
+    ImagePacker__process["ImagePacker::process"]
+    In_Front["In_Front"]
+    Init["Init"]
+    InitCallbackCombos["InitCallbackCombos"]
+    InitCheckBoxPropertiesDialog["InitCheckBoxPropertiesDialog"]
+    InitComboBoxPropertiesDialog["InitComboBoxPropertiesDialog"]
+    initGridSettings["initGridSettings"]
+    Initialize_Controls__["Initialize_Controls()"]
+    InitializeProtect["InitializeProtect"]
+    InitListboxPropertiesDialog["InitListboxPropertiesDialog"]
+    InitPanel["InitPanel"]
+    InitProgressBarPropertiesDialog["InitProgressBarPropertiesDialog"]
+    InitPropertiesDialog["InitPropertiesDialog"]
+    InitPushButtonPropertiesDialog["InitPushButtonPropertiesDialog"]
+    InitRadioButtonPropertiesDialog["InitRadioButtonPropertiesDialog"]
+    InitStaticTextPropertiesDialog["InitStaticTextPropertiesDialog"]
+    InitTabControlPropertiesDialog["InitTabControlPropertiesDialog"]
+    InitTextEntryPropertiesDialog["InitTextEntryPropertiesDialog"]
+    InitUserWinPropertiesDialog["InitUserWinPropertiesDialog"]
+    input_box_cf["input_box_cf"]
+    invalObjectInView["invalObjectInView"]
+    KVPairClass__getInt["KVPairClass::getInt"]
+    KVPairClass__getUnsignedInt["KVPairClass::getUnsignedInt"]
+    KVPairClass__readFromFile["KVPairClass::readFromFile"]
+    KVPairClass__set["KVPairClass::set"]
+    LayersList__addMapObjectToLayersList["LayersList::addMapObjectToLayersList"]
+    LayersList__mergeLayerInto["LayersList::mergeLayerInto"]
+    LayersList__OnHideShowLayer["LayersList::OnHideShowLayer"]
+    LayersList__removeMapObjectFromLayersList["LayersList::removeMapObjectFromLayersList"]
+    LightGlareSaveClass__LightGlareSaveClass["LightGlareSaveClass::LightGlareSaveClass"]
+    LightGlareSaveClass__Write_To_File["LightGlareSaveClass::Write_To_File"]
+    listboxPropertiesCallback["listboxPropertiesCallback"]
+    Load["Load"]
+    load_header["load_header"]
+    loadBaseImages["loadBaseImages"]
+    loadBitmap["loadBitmap"]
+    loadExistingGroupsCombo["loadExistingGroupsCombo"]
+    loadList["loadList"]
+    loadUserWindows["loadUserWindows"]
+    loadWolapi["loadWolapi"]
+    localIsUnderwater["localIsUnderwater"]
+    localtime_r["localtime_r"]
+    LogDataDialogClass__Dialog_Proc["LogDataDialogClass::Dialog_Proc"]
+    LogDataDialogClass__printf["LogDataDialogClass::printf"]
+    LogDataDialogClass__rprintf["LogDataDialogClass::rprintf"]
+    LogDataDialogClass__updatebar["LogDataDialogClass::updatebar"]
+    LogDataDialogClass__Wait_OK["LogDataDialogClass::Wait_OK"]
+    logIt["logIt"]
+    logMonitor["logMonitor"]
+    main["main"]
+    makeChildOf["makeChildOf"]
+    MakePreviewDisplay["MakePreviewDisplay"]
+    MapSettings__OnInitDialog["MapSettings::OnInitDialog"]
+    MapSettings__OnOK["MapSettings::OnOK"]
+    MatcherClass__connectAndLoop["MatcherClass::connectAndLoop"]
+    Matrix4__Init_Perspective["Matrix4::Init_Perspective"]
+    Matrix4__Inverse["Matrix4::Inverse"]
+    MboxD__print["MboxD::print"]
+    MeshConnectionsClass__MeshConnectionsClass["MeshConnectionsClass::MeshConnectionsClass"]
+    MeshDeformSaveClass__Export["MeshDeformSaveClass::Export"]
+    Message_Proc__["Message_Proc()"]
+    MonoD___MonoD__["MonoD::~MonoD()"]
+    MonoD__MonoD__["MonoD::MonoD()"]
+    MonoD__print__["MonoD::print()"]
+    MonoD__print_const_char_str__int_len_["MonoD::print(const char str, int len)"]
+    mouseDown["mouseDown"]
+    mouseDown__["mouseDown()"]
+    mouseEvent["mouseEvent"]
+    mouseMove["mouseMove"]
+    mouseMoved["mouseMoved"]
+    mouseUp["mouseUp"]
+    moveAheadOf["moveAheadOf"]
+    moveWindowAheadOf["moveWindowAheadOf"]
+    Msg["Msg"]
+    nextParam["nextParam"]
+    NickErrorCallback["NickErrorCallback"]
+    OnApplyRoad["OnApplyRoad"]
+    OnBrowse["OnBrowse"]
+    OnCameraReset["OnCameraReset"]
+    OnChangeFenceSpacingEdit["OnChangeFenceSpacingEdit"]
+    OnChangePitchEdit["OnChangePitchEdit"]
+    OnCopy["OnCopy"]
+    OnDelete["OnDelete"]
+    OnFileError["OnFileError"]
+    OnFileError_EFileError_error__bool_canRetry_["OnFileError(EFileError error, bool canRetry)"]
+    OnInitDialog["OnInitDialog"]
+    OnMakeRiver__["OnMakeRiver()"]
+    OnMatch["OnMatch"]
+    OnMoveUp["OnMoveUp"]
+    OnNew["OnNew"]
+    OnNotify["OnNotify"]
+    OnOK["OnOK"]
+    OnPaint__["OnPaint()"]
+    OnParticleSystemEdit["OnParticleSystemEdit"]
+    OnPause["OnPause"]
+    OnPreviewSound["OnPreviewSound"]
+    OnScriptAdjust["OnScriptAdjust"]
+    OnSelchangeActionList["OnSelchangeActionList"]
+    OnSelchangeConditionType["OnSelchangeConditionType"]
+    OnSelchangeMatchcombo["OnSelchangeMatchcombo"]
+    OnStep["OnStep"]
+    OnTimer["OnTimer"]
+    OnViewShowshadows["OnViewShowshadows"]
+    OnViewShowwireframe["OnViewShowwireframe"]
+    Open["Open"]
+    Open_ERights_rights_["Open(ERights rights)"]
+    openPopupMenu["openPopupMenu"]
+    operator__["operator=="]
+    PacketClass__Add_Field["PacketClass::Add_Field"]
+    PacketClass__Create_Comms_Packet["PacketClass::Create_Comms_Packet"]
+    PacketClass__Create_Comms_Packet_int__size_["PacketClass::Create_Comms_Packet(int &size)"]
+    PacketClass__Find_Field_char_id_["PacketClass::Find_Field(char id)"]
+    PacketClass__Get_Field["PacketClass::Get_Field"]
+    PacketClass__Get_Field_char_id___various_types__["PacketClass::Get_Field(char id, [various types])"]
+    PacketClass__PacketClass_char_curbuf_["PacketClass::PacketClass(char curbuf)"]
+    packImages["packImages"]
+    PageErrorProc["PageErrorProc"]
+    paranoidLogMonitor["paranoidLogMonitor"]
+    parseIntoKVPairs["parseIntoKVPairs"]
+    Passes_CRC_Check["Passes_CRC_Check"]
+    pasteClipboard["pasteClipboard"]
+    performUpdate["performUpdate"]
+    pickAllWaypointsInPath["pickAllWaypointsInPath"]
+    pickPolygon["pickPolygon"]
+    plantGrove["plantGrove"]
+    plantShrub["plantShrub"]
+    plantTree["plantTree"]
+    PointerTool__activate["PointerTool::activate"]
+    poly_getInsertIndex["poly_getInsertIndex"]
+    poly_pickOnMouseDown["poly_pickOnMouseDown"]
+    poly_pickPoint["poly_pickPoint"]
+    poly_pickPoly["poly_pickPoly"]
+    poly_snapToPoly["poly_snapToPoly"]
+    PopSliderChanged["PopSliderChanged"]
+    PopupSlider__MoveThumbUnderMouse["PopupSlider::MoveThumbUnderMouse"]
+    PopupSlider__New["PopupSlider::New"]
+    PopupSlider__OnLButtonDown["PopupSlider::OnLButtonDown"]
+    PopupSlider__OnMouseMove["PopupSlider::OnMouseMove"]
+    PreviewProc["PreviewProc"]
+    Process_Block["Process_Block"]
+    progressBarPropertiesCallback["progressBarPropertiesCallback"]
+    PS2GameMtlShaderDlg__Apply_Preset["PS2GameMtlShaderDlg::Apply_Preset"]
+    PS2GameMtlShaderDlg__Dialog_Proc["PS2GameMtlShaderDlg::Dialog_Proc"]
+    PS2GameMtlShaderDlg__Set_Preset["PS2GameMtlShaderDlg::Set_Preset"]
+    pushButtonPropertiesCallback["pushButtonPropertiesCallback"]
+    PutBytes_const_void_ptr__UInt32_bytes_["PutBytes(const void ptr, UInt32 bytes)"]
+    queueFileForDownload["queueFileForDownload"]
+    radioButtonPropertiesCallback["radioButtonPropertiesCallback"]
+    RampOptions__OnWidthChange["RampOptions::OnWidthChange"]
+    Range__GetNumberFormat["Range::GetNumberFormat"]
+    readFile_FILE_in_["readFile(FILE in)"]
+    readLoop["readLoop"]
+    Record_Mesh_State["Record_Mesh_State"]
+    Reinterpret_Cast["Reinterpret_Cast"]
+    Release__["Release()"]
+    ReloadDialog["ReloadDialog"]
+    remove["remove"]
+    removeWindow["removeWindow"]
+    Render_RenderInfoClass___rinfo_["Render(RenderInfoClass & rinfo)"]
+    replace["replace"]
+    ReplaceAllStreams["ReplaceAllStreams"]
+    Reset["Reset"]
+    resetRenderObjects["resetRenderObjects"]
+    ResolveIP["ResolveIP"]
+    Restore_Set["Restore_Set"]
+    Save["Save"]
+    Save___Load["Save / Load"]
+    Save_ChunkSaveClass___csave__bool_compress_["Save(ChunkSaveClass & csave, bool compress)"]
+    Save_Load["Save/Load"]
+    save_header["save_header"]
+    Save_Settings__["Save_Settings()"]
+    SaveCallbacks["SaveCallbacks"]
+    SaveCommonDialogProperties["SaveCommonDialogProperties"]
+    saveGadgetData["saveGadgetData"]
+    saveLayoutCallbacks["saveLayoutCallbacks"]
+    saveWindow["saveWindow"]
+    scan_edge["scan_edge"]
+    scrollInView["scrollInView"]
+    SelectColor["SelectColor"]
+    SelectColorDlgProc["SelectColorDlgProc"]
+    Sem4__Destroy__["Sem4::Destroy()"]
+    Sem4__GetValue_int_sval_["Sem4::GetValue(int sval)"]
+    Sem4__Post__["Sem4::Post()"]
+    Sem4__Sem4__["Sem4::Sem4()"]
+    Sem4__Sem4_uint32_value_["Sem4::Sem4(uint32 value)"]
+    Sem4__TryWait__["Sem4::TryWait()"]
+    Sem4__Wait__["Sem4::Wait()"]
+    SendProtectMessage["SendProtectMessage"]
+    Set_Bit["Set_Bit"]
+    Set_Max_Deform_Sets["Set_Max_Deform_Sets"]
+    set_origin_app_data_cf["set_origin_app_data_cf"]
+    Set_W3D_Name["Set_W3D_Name"]
+    setAllStreams["setAllStreams"]
+    setCurrentWindow["setCurrentWindow"]
+    setCursor["setCursor"]
+    setDebugStream___setInfoStream___setWarnStream___setErrorStream["setDebugStream / setInfoStream / setWarnStream / setErrorStream"]
+    setDebugStream__setInfoStream__setWarnStream__setErrorStream["setDebugStream, setInfoStream, setWarnStream, setErrorStream"]
+    setFlattenHeights_Bool_flat_["setFlattenHeights(Bool flat)"]
+    setHeight_Int_height_["setHeight(Int height)"]
+    setObjTracking["setObjTracking"]
+    setParanoidStream["setParanoidStream"]
+    showOptionsDialog["showOptionsDialog"]
+    ShutdownProtect["ShutdownProtect"]
+    Signal_Quit["Signal_Quit"]
+    SimpleDIBClass___SimpleDIBClass["SimpleDIBClass::~SimpleDIBClass"]
+    SimpleDIBClass__Clear["SimpleDIBClass::Clear"]
+    SimpleDIBClass__SimpleDIBClass["SimpleDIBClass::SimpleDIBClass"]
+    SnapPointsClass__Export_Points["SnapPointsClass::Export_Points"]
+    Sort_Vertices["Sort_Vertices"]
+    startMouseDown["startMouseDown"]
+    startUpdateHeight__["startUpdateHeight()"]
+    staticTextPropertiesCallback["staticTextPropertiesCallback"]
+    StderrD__print["StderrD::print"]
+    StdFile___StdFile__["StdFile::~StdFile()"]
+    StdFile__open__["StdFile::open()"]
+    StdFile__read__["StdFile::read()"]
+    StdFile__seek__["StdFile::seek()"]
+    StdFile__write__["StdFile::write()"]
+    StdFileSystem__open["StdFileSystem::open"]
+    StdoutD__print["StdoutD::print"]
+    StoreImageAndColor["StoreImageAndColor"]
+    strtrim["strtrim"]
+    stuffValuesIntoFields["stuffValuesIntoFields"]
+    Submit_Key["Submit_Key"]
+    Submit_Vertex["Submit_Vertex"]
+    SurfaceTypeProc["SurfaceTypeProc"]
+    SwitchToState["SwitchToState"]
+    tabControlPropertiesCallback["tabControlPropertiesCallback"]
+    Targa__DecodeImage["Targa::DecodeImage"]
+    Targa__EncodeImage["Targa::EncodeImage"]
+    Targa__Load["Targa::Load"]
+    Targa__Open["Targa::Open"]
+    TCP__Connect["TCP::Connect"]
+    textEntryPropertiesCallback["textEntryPropertiesCallback"]
+    threadClassLauncher_void__["threadClassLauncher(void )"]
+    ThreadFactory__startThread_Runnable____void___bit8_["ThreadFactory::startThread(Runnable &, void , bit8)"]
+    ThreadFactory__startThread_Runnable__runnable__void_data__bit8_destroy_["ThreadFactory::startThread(Runnable &runnable, void data, bit8 destroy)"]
+    ThreadFactory__startThread_void____void____void__["ThreadFactory::startThread(void ()(void ), void )"]
+    ThreadFactory__startThread_void__start_func__void____void_data_["ThreadFactory::startThread(void (start_func)(void ), void data)"]
+    threadFuncLauncher_void__["threadFuncLauncher(void )"]
+    TimezoneOffset["TimezoneOffset"]
+    TimezoneString["TimezoneString"]
+    TTFontClass__TTFontClass["TTFontClass::TTFontClass"]
+    update["update"]
+    Update_Texture_Buttons["Update_Texture_Buttons"]
+    updateFlatCellForAdjacentCliffs["updateFlatCellForAdjacentCliffs"]
+    updateHeight__["updateHeight()"]
+    updateLabel["updateLabel"]
+    updateObjectOptions["updateObjectOptions"]
+    UpdatePreviewWindow["UpdatePreviewWindow"]
+    updateTextures["updateTextures"]
+    updateTheUI__["updateTheUI()"]
+    usage["usage"]
+    UstringT_operator__["UstringT/operator=="]
+    UstringT_UstringT__constructor_["UstringT/UstringT (constructor)"]
+    validateDragDropOperation["validateDragDropOperation"]
+    validateImages["validateImages"]
+    VectorChannelClass_Save["VectorChannelClass/Save"]
+    VectorChannelClass__SaveTimeCoded["VectorChannelClass::SaveTimeCoded"]
+    viewToDocCoords["viewToDocCoords"]
+    VoxelClass__["VoxelClass()"]
+    VoxelClass__Quantize_Meshes["VoxelClass::Quantize_Meshes"]
+    VoxelDebugWindowClass__Dialog_Proc["VoxelDebugWindowClass::Dialog_Proc"]
+    VoxelDebugWindowClass__update_display["VoxelDebugWindowClass::update_display"]
+    W3dOptionsDialogClass__Dialog_Init["W3dOptionsDialogClass::Dialog_Init"]
+    W3dOptionsDialogClass__Dialog_Ok["W3dOptionsDialogClass::Dialog_Ok"]
+    W3dOptionsDialogClass__Dialog_Proc["W3dOptionsDialogClass::Dialog_Proc"]
+    WaterTool__fillTheArea["WaterTool::fillTheArea"]
+    WaterTool__mouseDown["WaterTool::mouseDown"]
+    WindowsVersionInfo__Version_String["WindowsVersionInfo::Version_String"]
+    WindowsVersionInfo__WindowsVersionInfo["WindowsVersionInfo::WindowsVersionInfo"]
+    WinMain["WinMain"]
+    Workbooks__Open["Workbooks::Open"]
+    Write_To_File["Write_To_File"]
+    writeFile_FILE_config_["writeFile(FILE config)"]
+    writeFinalTextures["writeFinalTextures"]
+    writeVersion["writeVersion"]
+    Wstring__getToken["Wstring::getToken"]
+    Wstring__operator_["Wstring::operator+"]
+    Wstring__replace["Wstring::replace"]
+    Wstring__setFormatted["Wstring::setFormatted"]
+    Wstring__strgrow["Wstring::strgrow"]
+    Xtime__compare["Xtime::compare"]
+  end
+
+  galloc --> malloc
+  gfree --> free
+  gopen --> fopen
+  gopen --> Msg
+  gwopen --> fopen
+  gclose --> fclose
+  gread --> fread
+  gseek --> fseek
+  glen --> gtell
+  glen --> fseek
+  gtell --> ftell
+  GetCDClass__Get_CD_Drive_For_This_Volume --> GetVolumeInformation
+  CD_Volume_Verification --> GetVolumeInformation
+  IGROptionsClass__Init --> RegOpenKeyEx
+  IGROptionsClass__Init --> RegQueryValueEx
+  IGROptionsClass__Init --> RegCloseKey
+  IGROptionsClass__Set_Options --> RegOpenKeyEx
+  IGROptionsClass__Set_Options --> RegCloseKey
+  IGROptionsClass__Set_Options --> Init
+  WindowsVersionInfo__WindowsVersionInfo --> Msg
+  WindowsVersionInfo__WindowsVersionInfo --> RegOpenKeyEx
+  WindowsVersionInfo__WindowsVersionInfo --> RegQueryValueEx
+  WindowsVersionInfo__WindowsVersionInfo --> RegCloseKey
+  WindowsVersionInfo__Version_String --> strcpy
+  WindowsVersionInfo__Version_String --> strcat
+  File__open --> setName
+  File__close --> setName
+  File__size --> seek
+  File__position --> seek
+  File__printf --> write
+  File__printf --> vsprintf
+  StdFileSystem__open --> delete
+  Bin__Add --> calc_hash
+  Bin__GetBinItem --> calc_hash
+  Workbooks__Open --> InvokeHelper
+  _Application__GetRange --> InvokeHelper
+  Range__GetNumberFormat --> InvokeHelper
+  OnMatch --> GetDlgItem
+  OnInitDialog --> SetWindowText
+  OnInitDialog --> GetDlgItem
+  OnSelchangeMatchcombo --> GetDlgItem
+  CreateTranslationTable --> fopen
+  CreateTranslationTable --> fprintf
+  CreateTranslationTable --> fclose
+  writeVersion --> fopen
+  writeVersion --> fprintf
+  writeVersion --> fclose
+  usage --> printf
+  strtrim --> strlen
+  strtrim --> strcpy
+  strtrim --> strtok
+  WinMain --> strtok
+  WinMain --> fopen
+  WinMain --> fread
+  WinMain --> strstr
+  WinMain --> atoi
+  WinMain --> writeVersion
+  WinMain --> printf
+  DebugLog --> vsnprintf
+  DebugLog --> printf
+  DebugLog --> OutputDebugString
+  DebugLog --> va_list
+  DebugLog --> cstdarg
+  KVPairClass__set --> parseIntoKVPairs
+  KVPairClass__readFromFile --> set
+  KVPairClass__readFromFile --> fopen
+  KVPairClass__readFromFile --> fseek
+  KVPairClass__readFromFile --> ftell
+  KVPairClass__readFromFile --> fread
+  KVPairClass__readFromFile --> fclose
+  KVPairClass__getInt --> getStringVal
+  KVPairClass__getInt --> atoi
+  KVPairClass__getUnsignedInt --> getStringVal
+  KVPairClass__getUnsignedInt --> atoi
+  OnPause --> _UpdatePauseButton
+  OnStep --> _UpdatePauseButton
+  draw --> drawUIFeedback
+  duplicateSelected --> duplicateWindow
+  addWindowToTree --> findTreeEntry
+  SaveCallbacks --> winGetEditData
+  SaveCallbacks --> SendDlgItemMessage
+  setCurrentWindow --> winGetEditData
+  setCurrentWindow --> winGetInstanceData
+  setCurrentWindow --> SendDlgItemMessage
+  setCurrentWindow --> SetWindowText
+  loadUserWindows --> winGetInstanceData
+  loadUserWindows --> SendMessage
+  saveLayoutCallbacks --> SendDlgItemMessage
+  CallbackEditorDialogProc --> InitCallbackCombos
+  CallbackEditorDialogProc --> loadUserWindows
+  CallbackEditorDialogProc --> setCurrentWindow
+  CallbackEditorDialogProc --> SaveCallbacks
+  CallbackEditorDialogProc --> saveLayoutCallbacks
+  checkBoxPropertiesCallback --> HandleCommonDialogMessages
+  checkBoxPropertiesCallback --> SaveCommonDialogProperties
+  checkBoxPropertiesCallback --> GetStateInfo
+  checkBoxPropertiesCallback --> DestroyWindow
+  InitCheckBoxPropertiesDialog --> CreateDialog
+  InitCheckBoxPropertiesDialog --> CommonDialogInitialize
+  InitCheckBoxPropertiesDialog --> StoreImageAndColor
+  InitCheckBoxPropertiesDialog --> SwitchToState
+  SelectColor --> DialogBox
+  SelectColor --> SelectColorDlgProc
+  SelectColorDlgProc --> InvalidateRect
+  SelectColorDlgProc --> SetWindowText
+  SelectColorDlgProc --> SetDlgItemInt
+  SelectColorDlgProc --> GetDlgItemInt
+  SelectColorDlgProc --> SendMessage
+  SelectColorDlgProc --> EndDialog
+  comboBoxPropertiesCallback --> HandleCommonDialogMessages
+  comboBoxPropertiesCallback --> GetStateInfo
+  comboBoxPropertiesCallback --> StoreColor
+  comboBoxPropertiesCallback --> SaveCommonDialogProperties
+  InitComboBoxPropertiesDialog --> CreateDialog
+  InitComboBoxPropertiesDialog --> CommonDialogInitialize
+  InitComboBoxPropertiesDialog --> StoreImageAndColor
+  InitComboBoxPropertiesDialog --> SetDlgItemInt
+  InitComboBoxPropertiesDialog --> CheckDlgButton
+  InitComboBoxPropertiesDialog --> SwitchToState
+  genericPropertiesCallback --> HandleCommonDialogMessages
+  genericPropertiesCallback --> SelectColor
+  genericPropertiesCallback --> SaveCommonDialogProperties
+  genericPropertiesCallback --> SaveCallbacks
+  InitCallbackCombos --> SendMessage
+  InitUserWinPropertiesDialog --> CreateDialog
+  InitUserWinPropertiesDialog --> CommonDialogInitialize
+  InitUserWinPropertiesDialog --> LoadImageListComboBox
+  InitUserWinPropertiesDialog --> InitCallbackCombos
+  initGridSettings --> SetDlgItemInt
+  initGridSettings --> CheckDlgButton
+  GridSettingsDialogProc --> initGridSettings
+  GridSettingsDialogProc --> SetDlgItemInt
+  GridSettingsDialogProc --> CheckDlgButton
+  GridSettingsDialogProc --> SelectColor
+  GridSettingsDialogProc --> DeleteObject
+  GridSettingsDialogProc --> EndDialog
+  listboxPropertiesCallback --> HandleCommonDialogMessages
+  listboxPropertiesCallback --> GetStateInfo
+  listboxPropertiesCallback --> StoreColor
+  InitListboxPropertiesDialog --> CreateDialog
+  InitListboxPropertiesDialog --> CommonDialogInitialize
+  InitListboxPropertiesDialog --> StoreImageAndColor
+  InitListboxPropertiesDialog --> SwitchToState
+  progressBarPropertiesCallback --> HandleCommonDialogMessages
+  progressBarPropertiesCallback --> SaveCommonDialogProperties
+  progressBarPropertiesCallback --> GetStateInfo
+  progressBarPropertiesCallback --> DestroyWindow
+  InitProgressBarPropertiesDialog --> CreateDialog
+  InitProgressBarPropertiesDialog --> CommonDialogInitialize
+  InitProgressBarPropertiesDialog --> StoreImageAndColor
+

@@ -1,0 +1,316 @@
+﻿%%{ init: { 'theme': 'dark', 'flowchart': { 'curve': 'basis' } } }%%
+graph LR
+
+  subgraph Generals
+    adjustVector["adjustVector"]
+    aiDoCommand["aiDoCommand"]
+    aiGroupFromSquad["aiGroupFromSquad"]
+    assistAttack["assistAttack"]
+    AssistedTargetingUpdate["AssistedTargetingUpdate"]
+    attemptBestFirePointPosition__Coord3D_version_["attemptBestFirePointPosition (Coord3D version)"]
+    attemptBestFirePointPosition__Object_version_["attemptBestFirePointPosition (Object version)"]
+    attemptHealing["attemptHealing"]
+    AutoHealBehavior___AutoHealBehavior["AutoHealBehavior::~AutoHealBehavior"]
+    AutoHealBehavior__AutoHealBehavior["AutoHealBehavior::AutoHealBehavior"]
+    AutoHealBehavior__onDamage["AutoHealBehavior::onDamage"]
+    AutoHealBehavior__pulseHealObject["AutoHealBehavior::pulseHealObject"]
+    AutoHealBehavior__update["AutoHealBehavior::update"]
+    BaseRegenerateUpdate__BaseRegenerateUpdate["BaseRegenerateUpdate::BaseRegenerateUpdate"]
+    BaseRegenerateUpdate__onDamage["BaseRegenerateUpdate::onDamage"]
+    BaseRegenerateUpdate__update["BaseRegenerateUpdate::update"]
+    beginSlowDeath["beginSlowDeath"]
+    beginStructureCollapse["beginStructureCollapse"]
+    beginStructureTopple["beginStructureTopple"]
+    BridgeScaffoldBehavior__reverseMotion["BridgeScaffoldBehavior::reverseMotion"]
+    BridgeScaffoldBehavior__setMotion["BridgeScaffoldBehavior::setMotion"]
+    BridgeScaffoldBehavior__update["BridgeScaffoldBehavior::update"]
+    BridgeScaffoldBehavior__xfer["BridgeScaffoldBehavior::xfer"]
+    buildNonDupRandomIndexList["buildNonDupRandomIndexList"]
+    calcBestGarrisonPosition["calcBestGarrisonPosition"]
+    calcDirectionToApplyThrust["calcDirectionToApplyThrust"]
+    calcRandomForce["calcRandomForce"]
+    calcSlowDownDist["calcSlowDownDist"]
+    calcTransform["calcTransform"]
+    canSwitchIndexToIndex["canSwitchIndexToIndex"]
+    changeBodyDamageState["changeBodyDamageState"]
+    CleanupHazardUpdate__fireWhenReady["CleanupHazardUpdate::fireWhenReady"]
+    CleanupHazardUpdate__onObjectCreated["CleanupHazardUpdate::onObjectCreated"]
+    CleanupHazardUpdate__scanClosestTarget["CleanupHazardUpdate::scanClosestTarget"]
+    CleanupHazardUpdate__update["CleanupHazardUpdate::update"]
+    computeNextClientFXTime["computeNextClientFXTime"]
+    computeNextLogicFXTime["computeNextLogicFXTime"]
+    CrateSystem__init["CrateSystem::init"]
+    CrateSystem__newCrateTemplate["CrateSystem::newCrateTemplate"]
+    CrateSystem__newCrateTemplateOverride["CrateSystem::newCrateTemplateOverride"]
+    CrateSystem__parseCrateTemplateDefinition["CrateSystem::parseCrateTemplateDefinition"]
+    CrateSystem__reset["CrateSystem::reset"]
+    DemoTrapUpdate__onObjectCreated["DemoTrapUpdate::onObjectCreated"]
+    DemoTrapUpdate__update["DemoTrapUpdate::update"]
+    DeployStyleAIUpdate__aiDoCommand["DeployStyleAIUpdate::aiDoCommand"]
+    DeployStyleAIUpdate__setMyState["DeployStyleAIUpdate::setMyState"]
+    DeployStyleAIUpdate__update["DeployStyleAIUpdate::update"]
+    detonate["detonate"]
+    doAttack["doAttack"]
+    doFXListAtBone["doFXListAtBone"]
+    doLaunch["doLaunch"]
+    doMoveTo["doMoveTo"]
+    doOCLAtBone["doOCLAtBone"]
+    doParticleSystemAtBone["doParticleSystemAtBone"]
+    doPhaseStuff["doPhaseStuff"]
+    doSetRallyPoint["doSetRallyPoint"]
+    doToppleDelayBurstFX["doToppleDelayBurstFX"]
+    doToppleStartFX["doToppleStartFX"]
+    EjectPilotDie__onDie["EjectPilotDie::onDie"]
+    findAttackPath["findAttackPath"]
+    findBestTunnel["findBestTunnel"]
+    findClosestFreeGarrisonPointIndex["findClosestFreeGarrisonPointIndex"]
+    findObjectToRepair["findObjectToRepair"]
+    findSafePath["findSafePath"]
+    FireWeaponCollide["FireWeaponCollide"]
+    getLiveObjects["getLiveObjects"]
+    getLocalEffectPos["getLocalEffectPos"]
+    getObjectGarrisonPointIndex["getObjectGarrisonPointIndex"]
+    getRailedTransportDockUpdateInterface["getRailedTransportDockUpdateInterface"]
+    getSingleObjectFromSelection["getSingleObjectFromSelection"]
+    getTFU["getTFU"]
+    hasAttackedMeAndICanReturnFire["hasAttackedMeAndICanReturnFire"]
+    initTimes["initTimes"]
+    initWaveGuide["initWaveGuide"]
+    isFreeToAssist["isFreeToAssist"]
+    isIdle["isIdle"]
+    JetSlowDeathBehavior__beginSlowDeath["JetSlowDeathBehavior::beginSlowDeath"]
+    JetSlowDeathBehavior__onDie["JetSlowDeathBehavior::onDie"]
+    JetSlowDeathBehavior__update["JetSlowDeathBehavior::update"]
+    killRunningParticleSystems["killRunningParticleSystems"]
+    makeFeedbackLaser["makeFeedbackLaser"]
+    ObjectTypes__addObjectType["ObjectTypes::addObjectType"]
+    ObjectTypes__removeObjectType["ObjectTypes::removeObjectType"]
+    onCapture["onCapture"]
+    onCollide["onCollide"]
+    onDelete["onDelete"]
+    onDie["onDie"]
+    OverlordContain__onBodyDamageStateChange["OverlordContain::onBodyDamageStateChange"]
+    OverlordContain__onDelete["OverlordContain::onDelete"]
+    OverlordContain__onDie["OverlordContain::onDie"]
+    parseFXLocInfo["parseFXLocInfo"]
+    parseRankDefinition["parseRankDefinition"]
+    PolygonTrigger__addPoint["PolygonTrigger::addPoint"]
+    PolygonTrigger__addPolygonTrigger["PolygonTrigger::addPolygonTrigger"]
+    PolygonTrigger__deletePoint["PolygonTrigger::deletePoint"]
+    PolygonTrigger__deleteTriggers["PolygonTrigger::deleteTriggers"]
+    PolygonTrigger__getCenterPoint["PolygonTrigger::getCenterPoint"]
+    PolygonTrigger__getPolygonTriggerByID["PolygonTrigger::getPolygonTriggerByID"]
+    PolygonTrigger__getRadius["PolygonTrigger::getRadius"]
+    PolygonTrigger__insertPoint["PolygonTrigger::insertPoint"]
+    PolygonTrigger__ParsePolygonTriggersDataChunk["PolygonTrigger::ParsePolygonTriggersDataChunk"]
+    PolygonTrigger__pointInTrigger["PolygonTrigger::pointInTrigger"]
+    PolygonTrigger__removePolygonTrigger["PolygonTrigger::removePolygonTrigger"]
+    PolygonTrigger__setPoint["PolygonTrigger::setPoint"]
+    PolygonTrigger__WritePolygonTriggersDataChunk["PolygonTrigger::WritePolygonTriggersDataChunk"]
+    PrisonBehavior__addVisual["PrisonBehavior::addVisual"]
+    PrisonBehavior__onContaining["PrisonBehavior::onContaining"]
+    PrisonBehavior__onRemoving["PrisonBehavior::onRemoving"]
+    PrisonBehavior__pickVisualLocation["PrisonBehavior::pickVisualLocation"]
+    PrisonBehavior__removeVisual["PrisonBehavior::removeVisual"]
+    privateAttackObject["privateAttackObject"]
+    privateAttackPosition["privateAttackPosition"]
+    privateForceAttackObject["privateForceAttackObject"]
+    ProductionUpdate__cancelAndRefundAllProduction["ProductionUpdate::cancelAndRefundAllProduction"]
+    ProductionUpdate__cancelUpgrade["ProductionUpdate::cancelUpgrade"]
+    ProductionUpdate__queueCreateUnit["ProductionUpdate::queueCreateUnit"]
+    ProductionUpdate__queueUpgrade["ProductionUpdate::queueUpgrade"]
+    projectileFireAtObjectOrPosition["projectileFireAtObjectOrPosition"]
+    projectileHandleCollision["projectileHandleCollision"]
+    projectileLaunchAtObjectOrPosition["projectileLaunchAtObjectOrPosition"]
+    ProneUpdate__goProne["ProneUpdate::goProne"]
+    ProneUpdate__update["ProneUpdate::update"]
+    putObjectAtBestGarrisonPoint["putObjectAtBestGarrisonPoint"]
+    RailedTransportAIUpdate__aiDoCommand["RailedTransportAIUpdate::aiDoCommand"]
+    RailedTransportAIUpdate__pickAndMoveToInitialLocation["RailedTransportAIUpdate::pickAndMoveToInitialLocation"]
+    RailedTransportAIUpdate__update["RailedTransportAIUpdate::update"]
+    RailedTransportContain__exitObjectViaDoor["RailedTransportContain::exitObjectViaDoor"]
+    RailedTransportContain__isSpecificRiderFreeToExit["RailedTransportContain::isSpecificRiderFreeToExit"]
+    RailedTransportContain__onRemoving["RailedTransportContain::onRemoving"]
+    RailedTransportContain__xfer["RailedTransportContain::xfer"]
+    RailroadBehavior__updatePositionTrackDistance["RailroadBehavior::updatePositionTrackDistance"]
+    registerNewCave["registerNewCave"]
+    reset["reset"]
+    resolveBoneLocations["resolveBoneLocations"]
+    setDamageState["setDamageState"]
+    setSDEnabled["setSDEnabled"]
+    setWakeFrame["setWakeFrame"]
+    SpawnBehavior__update["SpawnBehavior::update"]
+    StealthDetectorUpdate["StealthDetectorUpdate"]
+    SupplyWarehouseCripplingBehavior__onBodyDamageStateChange["SupplyWarehouseCripplingBehavior::onBodyDamageStateChange"]
+    SupplyWarehouseCripplingBehavior__onDamage["SupplyWarehouseCripplingBehavior::onDamage"]
+    SupplyWarehouseCripplingBehavior__update["SupplyWarehouseCripplingBehavior::update"]
+    TensileFormationUpdate__initLinks["TensileFormationUpdate::initLinks"]
+    TensileFormationUpdate__propagateDislodgement["TensileFormationUpdate::propagateDislodgement"]
+    TensileFormationUpdate__update["TensileFormationUpdate::update"]
+    tryToOrientInThisDirection3D__2_overloads_["tryToOrientInThisDirection3D (2 overloads)"]
+    tryToRotateVector3D["tryToRotateVector3D"]
+    TunnelNetworkScan["TunnelNetworkScan"]
+    update["update"]
+    upgradeImplementation["upgradeImplementation"]
+    VeterancyGainCreate__onCreate["VeterancyGainCreate::onCreate"]
+    WorkerAIUpdate___WorkerAIUpdate["WorkerAIUpdate::~WorkerAIUpdate"]
+    WorkerAIUpdate__construct["WorkerAIUpdate::construct"]
+    WorkerAIUpdate__update["WorkerAIUpdate::update"]
+    WorkerAIUpdate__WorkerAIUpdate["WorkerAIUpdate::WorkerAIUpdate"]
+    xfer["xfer"]
+    xfer__DamageInfo_["xfer (DamageInfo)"]
+    xfer__DamageInfoInput_["xfer (DamageInfoInput)"]
+    xfer__DamageInfoOutput_["xfer (DamageInfoOutput)"]
+  end
+
+  findAttackPath --> buildActualPath
+  findAttackPath --> examineNeighboringCells
+  findSafePath --> buildActualPath
+  findSafePath --> examineNeighboringCells
+  hasAttackedMeAndICanReturnFire --> findObjectByID
+  findBestTunnel --> findObjectByID
+  TunnelNetworkScan --> getClosestObject
+  aiGroupFromSquad --> getLiveObjects
+  PolygonTrigger__getPolygonTriggerByID --> getNext
+  PolygonTrigger__ParsePolygonTriggersDataChunk --> newInstance
+  PolygonTrigger__ParsePolygonTriggersDataChunk --> addPoint
+  PolygonTrigger__addPolygonTrigger --> getNext
+  PolygonTrigger__removePolygonTrigger --> getNext
+  PolygonTrigger__deleteTriggers --> deleteInstance
+  PolygonTrigger__addPoint --> reallocate
+  PolygonTrigger__setPoint --> addPoint
+  PolygonTrigger__setPoint --> updateBounds
+  PolygonTrigger__insertPoint --> reallocate
+  PolygonTrigger__insertPoint --> updateBounds
+  PolygonTrigger__deletePoint --> updateBounds
+  PolygonTrigger__getCenterPoint --> updateBounds
+  PolygonTrigger__getCenterPoint --> getGroundHeight
+  PolygonTrigger__getRadius --> updateBounds
+  PolygonTrigger__pointInTrigger --> updateBounds
+  AutoHealBehavior__AutoHealBehavior --> createParticleSystem
+  AutoHealBehavior__AutoHealBehavior --> setPosition
+  AutoHealBehavior__AutoHealBehavior --> setWakeFrame
+  AutoHealBehavior__onDamage --> setWakeFrame
+  AutoHealBehavior__update --> createParticleSystem
+  AutoHealBehavior__update --> setPosition
+  AutoHealBehavior__pulseHealObject --> attemptHealing
+  AutoHealBehavior__pulseHealObject --> createParticleSystem
+  AutoHealBehavior__pulseHealObject --> setPosition
+  BridgeScaffoldBehavior__setMotion --> setMotion
+  BridgeScaffoldBehavior__reverseMotion --> setMotion
+  BridgeScaffoldBehavior__update --> getObject
+  BridgeScaffoldBehavior__update --> setPosition
+  BridgeScaffoldBehavior__xfer --> xferVersion
+  BridgeScaffoldBehavior__xfer --> xferUser
+  BridgeScaffoldBehavior__xfer --> xferReal
+  projectileLaunchAtObjectOrPosition --> projectileFireAtObjectOrPosition
+  projectileHandleCollision --> detonate
+  update --> detonate
+  JetSlowDeathBehavior__onDie --> getObject
+  JetSlowDeathBehavior__onDie --> getJetSlowDeathBehaviorModuleData
+  JetSlowDeathBehavior__beginSlowDeath --> getObject
+  JetSlowDeathBehavior__beginSlowDeath --> getJetSlowDeathBehaviorModuleData
+  JetSlowDeathBehavior__update --> getObject
+  JetSlowDeathBehavior__update --> getJetSlowDeathBehaviorModuleData
+  PrisonBehavior__pickVisualLocation --> GameLogicRandomValueReal
+  calcRandomForce --> GameLogicRandomValueReal
+  beginSlowDeath --> getObject
+  beginSlowDeath --> getSlowDeathBehaviorModuleData
+  beginSlowDeath --> calcRandomForce
+  doPhaseStuff --> GameLogicRandomValue
+  update --> getSlowDeathBehaviorModuleData
+  update --> getObject
+  update --> setPosition
+  update --> findObjectByID
+  update --> clearAndSetModelConditionFlags
+  onDie --> getAIUpdateInterface
+  onDie --> getBehaviorModules
+  onDie --> beginSlowDeath
+  SupplyWarehouseCripplingBehavior__onDamage --> setWakeFrame
+  SupplyWarehouseCripplingBehavior__update --> attemptHealing
+  SupplyWarehouseCripplingBehavior__update --> setWakeFrame
+  calcBestGarrisonPosition --> findClosestFreeGarrisonPointIndex
+  attemptBestFirePointPosition__Object_version_ --> getObjectGarrisonPointIndex
+  attemptBestFirePointPosition__Object_version_ --> putObjectAtBestGarrisonPoint
+  attemptBestFirePointPosition__Coord3D_version_ --> getObjectGarrisonPointIndex
+  attemptBestFirePointPosition__Coord3D_version_ --> putObjectAtBestGarrisonPoint
+  putObjectAtBestGarrisonPoint --> findClosestFreeGarrisonPointIndex
+  OverlordContain__onBodyDamageStateChange --> setDamageState
+  getRailedTransportDockUpdateInterface --> getBehaviorModules
+  RailedTransportContain__onRemoving --> getContainCount
+  RailedTransportContain__exitObjectViaDoor --> getRailedTransportDockUpdateInterface
+  RailedTransportContain__xfer --> xferVersion
+  parseFXLocInfo --> stricmp
+  getLocalEffectPos --> GameLogicRandomValue
+  onDie --> isDieApplicable
+  tryToOrientInThisDirection3D__2_overloads_ --> tryToRotateVector3D
+  ObjectTypes__addObjectType --> isInSet
+  ObjectTypes__removeObjectType --> isInSet
+  aiDoCommand --> reset
+  aiDoCommand --> aiAttackMoveToPosition
+  update --> getContain
+  update --> aiAttackObject
+  update --> aiAttackMoveToPosition
+  DeployStyleAIUpdate__update --> getObject
+  DeployStyleAIUpdate__update --> getCurrentWeapon
+  DeployStyleAIUpdate__update --> aiAttackObject
+  DeployStyleAIUpdate__setMyState --> clearAndSetModelConditionFlags
+  DeployStyleAIUpdate__setMyState --> addAudioEvent
+  privateAttackObject --> getContain
+  privateAttackObject --> isPassengerAllowedToFire
+  privateAttackObject --> aiAttackObject
+  privateForceAttackObject --> getContain
+  privateForceAttackObject --> isPassengerAllowedToFire
+  privateAttackPosition --> getContain
+  privateAttackPosition --> isPassengerAllowedToFire
+  xfer --> xferVersion
+  update --> isIdle
+  update --> aiMoveToPosition
+  WorkerAIUpdate__WorkerAIUpdate --> createMachines
+  WorkerAIUpdate___WorkerAIUpdate --> deleteInstance
+  WorkerAIUpdate__update --> createMachines
+  WorkerAIUpdate__construct --> newObject
+  AssistedTargetingUpdate --> setWakeFrame
+  AssistedTargetingUpdate --> getObject
+  isFreeToAssist --> getCurrentWeapon
+  assistAttack --> setWeaponLock
+  assistAttack --> aiAttackObject
+  assistAttack --> makeFeedbackLaser
+  makeFeedbackLaser --> newObject
+  BaseRegenerateUpdate__BaseRegenerateUpdate --> setWakeFrame
+  BaseRegenerateUpdate__onDamage --> setWakeFrame
+  BaseRegenerateUpdate__update --> attemptHealing
+  BaseRegenerateUpdate__update --> setWakeFrame
+  update --> doFXListAtBone
+  update --> doOCLAtBone
+  update --> doParticleSystemAtBone
+  update --> computeNextLogicFXTime
+  update --> computeNextClientFXTime
+  initTimes --> REAL_TO_INT
+  buildNonDupRandomIndexList --> GameLogicRandomValue
+  changeBodyDamageState --> killRunningParticleSystems
+  changeBodyDamageState --> initTimes
+  doFXListAtBone --> resolveBoneLocations
+  doFXListAtBone --> convertBonePosToWorldPos
+  doOCLAtBone --> resolveBoneLocations
+  doOCLAtBone --> convertBonePosToWorldPos
+  doParticleSystemAtBone --> resolveBoneLocations
+  doParticleSystemAtBone --> setPosition
+  doParticleSystemAtBone --> attachToObject
+  computeNextClientFXTime --> REAL_TO_INT
+  computeNextLogicFXTime --> REAL_TO_INT
+  CleanupHazardUpdate__onObjectCreated --> getAttackRange
+  CleanupHazardUpdate__update --> isIdle
+  CleanupHazardUpdate__update --> findObjectByID
+  CleanupHazardUpdate__update --> setWeaponLock
+  CleanupHazardUpdate__update --> aiAttackObject
+  CleanupHazardUpdate__fireWhenReady --> findObjectByID
+  CleanupHazardUpdate__fireWhenReady --> getAttackRange
+  CleanupHazardUpdate__fireWhenReady --> isIdle
+  CleanupHazardUpdate__fireWhenReady --> setWeaponLock
+  CleanupHazardUpdate__fireWhenReady --> aiAttackObject
+  CleanupHazardUpdate__scanClosestTarget --> getClosestObject
+  DemoTrapUpdate__update --> detonate
+  doLaunch --> calcTransform
+  doAttack --> calcTransform
+

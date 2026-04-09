@@ -1,0 +1,326 @@
+﻿%%{ init: { 'theme': 'dark', 'flowchart': { 'curve': 'basis' } } }%%
+graph LR
+
+  subgraph Generals
+    addAudioEvent["addAudioEvent"]
+    addObjectBuilt["addObjectBuilt"]
+    addObjectCaptured["addObjectCaptured"]
+    addObjectDestroyed["addObjectDestroyed"]
+    addObjectLost["addObjectLost"]
+    addTemplate["addTemplate"]
+    allocateFromW3DMemPool["allocateFromW3DMemPool"]
+    appearsToContainFriendlies["appearsToContainFriendlies"]
+    ArchiveFile__getFileListInDirectory__overloaded_["ArchiveFile::getFileListInDirectory (overloaded)"]
+    AudioEventRTS__generateFilename["AudioEventRTS::generateFilename"]
+    AudioEventRTS__generatePlayInfo["AudioEventRTS::generatePlayInfo"]
+    AudioEventRTS__getCurrentPosition["AudioEventRTS::getCurrentPosition"]
+    canDockAt["canDockAt"]
+    canDoSpecialPower["canDoSpecialPower"]
+    canFireWeapon["canFireWeapon"]
+    canFireWeaponAtLocation["canFireWeaponAtLocation"]
+    canFireWeaponAtObject["canFireWeaponAtObject"]
+    canGarrison["canGarrison"]
+    canGetHealedAt["canGetHealedAt"]
+    canGetRepairedAt["canGetRepairedAt"]
+    canOverrideSpecialPowerDestination["canOverrideSpecialPowerDestination"]
+    canPlayerGarrison["canPlayerGarrison"]
+    canRepairObject["canRepairObject"]
+    canTransferSuppliesAt["canTransferSuppliesAt"]
+    createW3DMemPool["createW3DMemPool"]
+    CSimplePlayer___CSimplePlayer["CSimplePlayer::~CSimplePlayer"]
+    CSimplePlayer__Close["CSimplePlayer::Close"]
+    CSimplePlayer__CSimplePlayer["CSimplePlayer::CSimplePlayer"]
+    CSimplePlayer__OnSample["CSimplePlayer::OnSample"]
+    CSimplePlayer__Play["CSimplePlayer::Play"]
+    Dict__clear["Dict::clear"]
+    Dict__copyFrom["Dict::copyFrom"]
+    Dict__ensureUnique["Dict::ensureUnique"]
+    Dict__remove["Dict::remove"]
+    Dict__setBool__setInt__setReal__setAsciiString__setUnicodeString["Dict::setBool, setInt, setReal, setAsciiString, setUnicodeString"]
+    Directory__Directory["Directory::Directory"]
+    doCrashBox["doCrashBox"]
+    doDamageFX["doDamageFX"]
+    DrawableModule__DrawableModule["DrawableModule::DrawableModule"]
+    embedInUseMap["embedInUseMap"]
+    extractAndSaveMap["extractAndSaveMap"]
+    File__position["File::position"]
+    File__print["File::print"]
+    File__size["File::size"]
+    FileInfo__set["FileInfo::set"]
+    findByTemplateID["findByTemplateID"]
+    findHighFileNumber["findHighFileNumber"]
+    findTemplateInternal["findTemplateInternal"]
+    freeDatabase["freeDatabase"]
+    freeFromW3DMemPool["freeFromW3DMemPool"]
+    GameEngine__execute["GameEngine::execute"]
+    GameEngine__init["GameEngine::init"]
+    GameEngine__update["GameEngine::update"]
+    GameLODManager__applyStaticLODLevel["GameLODManager::applyStaticLODLevel"]
+    GameLODManager__findStaticLODLevel["GameLODManager::findStaticLODLevel"]
+    GameLODManager__init["GameLODManager::init"]
+    GameState__init["GameState::init"]
+    GameState__xferSaveData["GameState::xferSaveData"]
+    GameStateMap__xfer["GameStateMap::xfer"]
+    getBool__getInt__getReal__getAsciiString["getBool, getInt, getReal, getAsciiString"]
+    getCurrentTickString["getCurrentTickString"]
+    getCurrentTimeString["getCurrentTimeString"]
+    GetGameAudioRandomValue["GetGameAudioRandomValue"]
+    GetGameAudioRandomValueReal["GetGameAudioRandomValueReal"]
+    GetGameClientRandomValue["GetGameClientRandomValue"]
+    GetGameClientRandomValueReal["GetGameClientRandomValueReal"]
+    GetGameLogicRandomSeedCRC["GetGameLogicRandomSeedCRC"]
+    GetGameLogicRandomValue["GetGameLogicRandomValue"]
+    GetGameLogicRandomValueReal["GetGameLogicRandomValueReal"]
+    GetShellOpenCommand["GetShellOpenCommand"]
+    getTotalUnitsBuilt["getTotalUnitsBuilt"]
+    getUnicodeDateBuffer["getUnicodeDateBuffer"]
+    getUnicodeTimeBuffer["getUnicodeTimeBuffer"]
+    initDisabledMasks["initDisabledMasks"]
+    InitGameLogicRandom["InitGameLogicRandom"]
+    initMemoryManager["initMemoryManager"]
+    InitPrecisionTimer["InitPrecisionTimer"]
+    InitRandom["InitRandom"]
+    initSubsystem["initSubsystem"]
+    isObjectShroudedForAction["isObjectShroudedForAction"]
+    LaunchURL["LaunchURL"]
+    load["load"]
+    localApplyBattlePlanBonusesToObject["localApplyBattlePlanBonusesToObject"]
+    LocalFile__close["LocalFile::close"]
+    LocalFile__convertToRAMFile["LocalFile::convertToRAMFile"]
+    LocalFile__nextLine["LocalFile::nextLine"]
+    LocalFile__open["LocalFile::open"]
+    LocalFile__read["LocalFile::read"]
+    LocalFile__readEntireAndClose["LocalFile::readEntireAndClose"]
+    LocalFile__scanInt["LocalFile::scanInt"]
+    LocalFile__scanReal["LocalFile::scanReal"]
+    LocalFile__scanString["LocalFile::scanString"]
+    LocalFile__seek["LocalFile::seek"]
+    LocalFile__write["LocalFile::write"]
+    LogClass___LogClass__["LogClass::~LogClass()"]
+    LogClass__log_const_char_fmt______["LogClass::log(const char fmt, ...)"]
+    LogClass__LogClass_const_char_fname_["LogClass::LogClass(const char fname)"]
+    MakeEscapedURL["MakeEscapedURL"]
+    memset32["memset32"]
+    NameKeyGenerator__init["NameKeyGenerator::init"]
+    NameKeyGenerator__nameToKey["NameKeyGenerator::nameToKey"]
+    NameKeyGenerator__reset["NameKeyGenerator::reset"]
+    newDrawable["newDrawable"]
+    newObject["newObject"]
+    newOverride["newOverride"]
+    newTemplate["newTemplate"]
+    ObjectModule__ObjectModule["ObjectModule::ObjectModule"]
+    parseObjectDefinition["parseObjectDefinition"]
+    PerfGather__dumpAll["PerfGather::dumpAll"]
+    PerfGather__initPerfDump["PerfGather::initPerfDump"]
+    PerfTimer__outputInfo["PerfTimer::outputInfo"]
+    preMainInitMemoryManager["preMainInitMemoryManager"]
+    prepBuffer["prepBuffer"]
+    randomValue["randomValue"]
+    RecorderClass__logCRCMismatch["RecorderClass::logCRCMismatch"]
+    RecorderClass__logGameEnd["RecorderClass::logGameEnd"]
+    RecorderClass__logGameStart["RecorderClass::logGameStart"]
+    RecorderClass__logPlayerDisconnect["RecorderClass::logPlayerDisconnect"]
+    ReleaseCrash["ReleaseCrash"]
+    removeAudioEvent["removeAudioEvent"]
+    removeObjectBuilt["removeObjectBuilt"]
+    reset["reset"]
+    seedRandom["seedRandom"]
+    setBool__setInt__setReal__setAsciiString["setBool, setInt, setReal, setAsciiString"]
+    shutdownMemoryManager["shutdownMemoryManager"]
+    skipNonSeps["skipNonSeps"]
+    skipNonWhitespace["skipNonWhitespace"]
+    skipSeps["skipSeps"]
+    skipWhitespace["skipWhitespace"]
+    State__friend_checkForSleepTransitions["State::friend_checkForSleepTransitions"]
+    State__friend_checkForTransitions["State::friend_checkForTransitions"]
+    StateMachine___StateMachine["StateMachine::~StateMachine"]
+    StateMachine__defineState["StateMachine::defineState"]
+    StateMachine__setState["StateMachine::setState"]
+    StateMachine__StateMachine["StateMachine::StateMachine"]
+    StateMachine__updateStateMachine["StateMachine::updateStateMachine"]
+    sysAllocate["sysAllocate"]
+    sysAllocateDoNotZero["sysAllocateDoNotZero"]
+    sysFree["sysFree"]
+    testMinimumRequirements["testMinimumRequirements"]
+    ThingFactory_Constructor["ThingFactory Constructor"]
+    ThingFactory_Destructor["ThingFactory Destructor"]
+    TunnelTracker__onTunnelDestroyed["TunnelTracker::onTunnelDestroyed"]
+    TunnelTracker__updateNemesis["TunnelTracker::updateNemesis"]
+    updateTGAtoDDS["updateTGAtoDDS"]
+    UpgradeMuxData__getUpgradeActivationMasks["UpgradeMuxData::getUpgradeActivationMasks"]
+    write["write"]
+    WSYS_String__operator__["WSYS_String::operator+="]
+    Xfer__xferAsciiString__xferUnicodeString["Xfer::xferAsciiString, xferUnicodeString"]
+    Xfer__xferByte__xferUnsignedByte__xferBool__etc_["Xfer::xferByte, xferUnsignedByte, xferBool, etc."]
+    Xfer__xferCoord3D__xferICoord3D__etc_["Xfer::xferCoord3D, xferICoord3D, etc."]
+    Xfer__xferKindOf["Xfer::xferKindOf"]
+    Xfer__xferMatrix3D["Xfer::xferMatrix3D"]
+    Xfer__xferScienceType__xferScienceVec["Xfer::xferScienceType, xferScienceVec"]
+    Xfer__xferSTLObjectIDList__xferSTLIntList["Xfer::xferSTLObjectIDList, xferSTLIntList"]
+    Xfer__xferUpgradeMask["Xfer::xferUpgradeMask"]
+    Xfer__xferUser["Xfer::xferUser"]
+    Xfer__xferVersion["Xfer::xferVersion"]
+    XferCRC__xferImplementation["XferCRC::xferImplementation"]
+    XferDeepCRC__close["XferDeepCRC::close"]
+    XferDeepCRC__open["XferDeepCRC::open"]
+    XferDeepCRC__xferImplementation["XferDeepCRC::xferImplementation"]
+    XferLoad__beginBlock["XferLoad::beginBlock"]
+    XferLoad__close["XferLoad::close"]
+    XferLoad__open["XferLoad::open"]
+    XferLoad__skip["XferLoad::skip"]
+    XferLoad__xferAsciiString["XferLoad::xferAsciiString"]
+    XferLoad__xferImplementation["XferLoad::xferImplementation"]
+    XferLoad__xferUnicodeString["XferLoad::xferUnicodeString"]
+  end
+
+  CSimplePlayer___CSimplePlayer --> CloseHandle
+  CSimplePlayer__Play --> Open
+  CSimplePlayer__Close --> Close
+  LaunchURL --> GetShellOpenCommand
+  LaunchURL --> CloseHandle
+  Dict__copyFrom --> clear
+  Dict__ensureUnique --> copyFrom
+  Dict__setBool__setInt__setReal__setAsciiString__setUnicodeString --> sortPairs
+  Dict__remove --> sortPairs
+  updateTGAtoDDS --> write
+  GameEngine__init --> initSubsystem
+  GameEngine__init --> load
+  GameEngine__update --> UPDATE
+  GameEngine__execute --> timeGetTime
+  GameLODManager__init --> testMinimumRequirements
+  GameLODManager__init --> refreshCustomStaticLODLevel
+  GameLODManager__findStaticLODLevel --> testMinimumRequirements
+  GameLODManager__applyStaticLODLevel --> refreshCustomStaticLODLevel
+  LogClass__LogClass_const_char_fname_ --> fopen
+  LogClass___LogClass__ --> fclose
+  LogClass__log_const_char_fmt______ --> fprintf
+  LogClass__log_const_char_fmt______ --> fflush
+  NameKeyGenerator__init --> freeSockets
+  NameKeyGenerator__reset --> freeSockets
+  NameKeyGenerator__nameToKey --> newInstance
+  InitPrecisionTimer --> timeGetTime
+  InitPrecisionTimer --> GetPrecisionTimer
+  PerfGather__initPerfDump --> strcpy
+  PerfGather__initPerfDump --> fopen
+  PerfGather__initPerfDump --> GetPrecisionTimer
+  PerfGather__dumpAll --> fprintf
+  PerfGather__dumpAll --> fflush
+  PerfGather__dumpAll --> fclose
+  PerfTimer__outputInfo --> DEBUG_CRASH
+  InitRandom --> seedRandom
+  InitGameLogicRandom --> seedRandom
+  GetGameLogicRandomValue --> randomValue
+  GetGameClientRandomValue --> randomValue
+  GetGameAudioRandomValue --> randomValue
+  GetGameLogicRandomValueReal --> randomValue
+  GetGameClientRandomValueReal --> randomValue
+  GetGameAudioRandomValueReal --> randomValue
+  RecorderClass__logGameStart --> fseek
+  RecorderClass__logGameStart --> fwrite
+  RecorderClass__logPlayerDisconnect --> fseek
+  RecorderClass__logPlayerDisconnect --> fwrite
+  RecorderClass__logCRCMismatch --> fseek
+  RecorderClass__logCRCMismatch --> fwrite
+  RecorderClass__logGameEnd --> fseek
+  RecorderClass__logGameEnd --> fwrite
+  appearsToContainFriendlies --> getContain
+  canGetRepairedAt --> getRelationship
+  canGetRepairedAt --> isEffectivelyDead
+  canGetRepairedAt --> getStatusBits
+  canGetRepairedAt --> getBodyModule
+  canGetRepairedAt --> isKindOf
+  canGetRepairedAt --> isObjectShroudedForAction
+  canTransferSuppliesAt --> isEffectivelyDead
+  canTransferSuppliesAt --> getStatusBits
+  canTransferSuppliesAt --> findUpdateModule
+  canTransferSuppliesAt --> getRelationship
+  canDockAt --> canTransferSuppliesAt
+  canDockAt --> findUpdateModule
+  canGetHealedAt --> getRelationship
+  canGetHealedAt --> isEffectivelyDead
+  canGetHealedAt --> getStatusBits
+  canGetHealedAt --> getBodyModule
+  canGetHealedAt --> isObjectShroudedForAction
+  canRepairObject --> getRelationship
+  canRepairObject --> isEffectivelyDead
+  canRepairObject --> getStatusBits
+  canRepairObject --> hasSpecialPower
+  canRepairObject --> estimateWeaponDamage
+  canDoSpecialPower --> hasSpecialPower
+  canFireWeaponAtLocation --> getWeaponInWeaponSlot
+  canFireWeaponAtObject --> getWeaponInWeaponSlot
+  canFireWeaponAtObject --> estimateWeaponDamage
+  canFireWeapon --> getWeaponInWeaponSlot
+  canGarrison --> isKindOf
+  canGarrison --> getContain
+  canGarrison --> isValidContainerFor
+  canPlayerGarrison --> isEffectivelyDead
+  canPlayerGarrison --> isKindOf
+  canPlayerGarrison --> getContain
+  canPlayerGarrison --> isValidContainerFor
+  addObjectBuilt --> isScoringEnabled
+  addObjectBuilt --> isKindOfMulti
+  getTotalUnitsBuilt --> isKindOfMulti
+  removeObjectBuilt --> isScoringEnabled
+  removeObjectBuilt --> isKindOfMulti
+  addObjectCaptured --> isScoringEnabled
+  addObjectCaptured --> isKindOf
+  addObjectDestroyed --> isScoringEnabled
+  addObjectDestroyed --> isKindOfMulti
+  addObjectDestroyed --> testStatus
+  addObjectLost --> isScoringEnabled
+  addObjectLost --> isKindOfMulti
+  addObjectLost --> testStatus
+  State__friend_checkForTransitions --> internalSetState
+  State__friend_checkForTransitions --> DEBUG_CRASH
+  State__friend_checkForTransitions --> DEBUG_ASSERTCRASH
+  State__friend_checkForSleepTransitions --> internalSetState
+  State__friend_checkForSleepTransitions --> DEBUG_CRASH
+  State__friend_checkForSleepTransitions --> DEBUG_ASSERTCRASH
+  StateMachine___StateMachine --> deleteInstance
+  StateMachine__setState --> internalSetState
+  skipSeps --> strchr
+  skipNonSeps --> strchr
+  skipWhitespace --> isspace
+  skipNonWhitespace --> isspace
+  prepBuffer --> getCurrentTimeString
+  prepBuffer --> strcpy
+  prepBuffer --> strcat
+  ReleaseCrash --> fopen
+  ReleaseCrash --> fprintf
+  ReleaseCrash --> fflush
+  ReleaseCrash --> fclose
+  Directory__Directory --> FindFirstFile
+  Directory__Directory --> FindNextFile
+  File__size --> seek
+  File__position --> seek
+  File__print --> write
+  sysAllocate --> GlobalAlloc
+  sysAllocate --> memset32
+  sysAllocateDoNotZero --> GlobalAlloc
+  sysAllocateDoNotZero --> memset32
+  sysFree --> memset32
+  initMemoryManager --> sysAllocate
+  initMemoryManager --> createDynamicMemoryAllocator
+  preMainInitMemoryManager --> sysAllocate
+  preMainInitMemoryManager --> createDynamicMemoryAllocator
+  shutdownMemoryManager --> sysFree
+  createW3DMemPool --> preMainInitMemoryManager
+  LocalFile__open --> fopen
+  LocalFile__close --> fclose
+  LocalFile__read --> fread
+  LocalFile__read --> _read
+  LocalFile__write --> fwrite
+  LocalFile__seek --> fseek
+  LocalFile__scanInt --> fread
+  LocalFile__scanInt --> _read
+  LocalFile__scanReal --> fread
+  LocalFile__scanReal --> _read
+  LocalFile__scanString --> fread
+  LocalFile__scanString --> _read
+  LocalFile__nextLine --> fread
+  LocalFile__nextLine --> _read
+  LocalFile__convertToRAMFile --> newInstance
+  LocalFile__convertToRAMFile --> deleteInstance
+  getUnicodeDateBuffer --> GetVersionEx
+

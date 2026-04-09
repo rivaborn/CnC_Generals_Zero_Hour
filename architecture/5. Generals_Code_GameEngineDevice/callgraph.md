@@ -1,0 +1,253 @@
+﻿# Call Graph & Dependency Diagrams
+
+Auto-generated from per-file architecture docs.
+
+## Function Call Graph
+
+Showing functions with 2+ incoming calls. Limited to 150 edges.
+
+```mermaid
+%%{ init: { 'theme': 'dark', 'flowchart': { 'curve': 'basis' } } }%%
+graph LR
+
+  subgraph Generals
+    adjustTransformMtx["adjustTransformMtx"]
+    allocateEdgingBuffers["allocateEdgingBuffers"]
+    audioDebugDisplay["audioDebugDisplay"]
+    buildSegments["buildSegments"]
+    Cast_Ray["Cast_Ray"]
+    castRay["castRay"]
+    changeGridHeight_Real_x__Real_y__Real_delta_["changeGridHeight(Real x, Real y, Real delta)"]
+    closeKeyboard["closeKeyboard"]
+    CreateBMPFile["CreateBMPFile"]
+    createDirectory["createDirectory"]
+    doDrawModule["doDrawModule"]
+    doesFileExist["doesFileExist"]
+    draw["draw"]
+    drawButtonText["drawButtonText"]
+    drawEdging["drawEdging"]
+    drawFramerateBar["drawFramerateBar"]
+    drawListBoxText["drawListBoxText"]
+    drawMoveHints["drawMoveHints"]
+    drawRadioButtonText["drawRadioButtonText"]
+    drawStaticTextText["drawStaticTextText"]
+    drawTrees["drawTrees"]
+    enableEmitters["enableEmitters"]
+    flagOccludedObjects["flagOccludedObjects"]
+    flushOccludedObjects["flushOccludedObjects"]
+    flushTranslucentObjects["flushTranslucentObjects"]
+    freeDisplayString["freeDisplayString"]
+    freeEdgingBuffers["freeEdgingBuffers"]
+    friend_forcePlayAudioEventRTS["friend_forcePlayAudioEventRTS"]
+    getCapsState["getCapsState"]
+    getFileInfo["getFileInfo"]
+    getFileListInDirectory["getFileListInDirectory"]
+    getKey["getKey"]
+    getLayerHeight["getLayerHeight"]
+    getMouseEvent["getMouseEvent"]
+    getPerformanceCounter["getPerformanceCounter"]
+    getPerformanceCounterFrequency["getPerformanceCounterFrequency"]
+    getUVData["getUVData"]
+    init["init"]
+    init__["init()"]
+    init_Real_waterLevel__Real_dx__Real_dy__SceneClass_parentScene__WaterType_type_["init(Real waterLevel, Real dx, Real dy, SceneClass parentScene, WaterType type)"]
+    initCursorResources["initCursorResources"]
+    initData["initData"]
+    initializeTextureFormats["initializeTextureFormats"]
+    initRopeParms["initRopeParms"]
+    interpolateFogLevels["interpolateFogLevels"]
+    loadBibsInVertexAndIndexBuffers["loadBibsInVertexAndIndexBuffers"]
+    loadMap["loadMap"]
+    loadText["loadText"]
+    MapObject__duplicate["MapObject::duplicate"]
+    MirrorRenderObjClass__Render["MirrorRenderObjClass::Render"]
+    MirrorRenderObjClass__renderSky["MirrorRenderObjClass::renderSky"]
+    MirrorRenderObjClass__renderWater["MirrorRenderObjClass::renderWater"]
+    moveAlongWaypointPath["moveAlongWaypointPath"]
+    newDisplayString["newDisplayString"]
+    notifyOfAudioCompletion_UnsignedInt_audioCompleted__UnsignedInt_flags_["notifyOfAudioCompletion(UnsignedInt audioCompleted, UnsignedInt flags)"]
+    openFile["openFile"]
+    openKeyboard["openKeyboard"]
+    parseAnimation["parseAnimation"]
+    playAudioEvent_AudioEventRTS_event_["playAudioEvent(AudioEventRTS event)"]
+    renderBibs["renderBibs"]
+    renderStenciledPlayerColor["renderStenciledPlayerColor"]
+    renderWater__["renderWater()"]
+    setCursor["setCursor"]
+    setHidden["setHidden"]
+    setShroudLevel["setShroudLevel"]
+    startMoveDebris___stopMoveDebris["startMoveDebris / stopMoveDebris"]
+    takeScreenShot["takeScreenShot"]
+    tossSegments["tossSegments"]
+    translateEvent["translateEvent"]
+    update__["update()"]
+    updateCameraMovements["updateCameraMovements"]
+    updateDrawModuleSupplyStatus["updateDrawModuleSupplyStatus"]
+    updateRenderTargetTextures_CameraClass_cam_["updateRenderTargetTextures(CameraClass cam)"]
+    updateTreadObjects["updateTreadObjects"]
+    Visibility_Check["Visibility_Check"]
+    W3DFunctionLexicon__init["W3DFunctionLexicon::init"]
+    W3DGadgetComboBoxDraw["W3DGadgetComboBoxDraw"]
+    W3DGadgetComboBoxImageDraw["W3DGadgetComboBoxImageDraw"]
+    W3DGadgetHorizontalSliderDraw["W3DGadgetHorizontalSliderDraw"]
+    W3DGadgetHorizontalSliderImageDraw["W3DGadgetHorizontalSliderImageDraw"]
+    W3DGadgetHorizontalSliderImageDrawA["W3DGadgetHorizontalSliderImageDrawA"]
+    W3DGadgetHorizontalSliderImageDrawB["W3DGadgetHorizontalSliderImageDrawB"]
+    W3DGadgetListBoxDraw["W3DGadgetListBoxDraw"]
+    W3DGadgetListBoxImageDraw["W3DGadgetListBoxImageDraw"]
+    W3DGadgetProgressBarDraw["W3DGadgetProgressBarDraw"]
+    W3DGadgetProgressBarImageDraw["W3DGadgetProgressBarImageDraw"]
+    W3DGadgetProgressBarImageDrawA["W3DGadgetProgressBarImageDrawA"]
+    W3DGadgetPushButtonDraw["W3DGadgetPushButtonDraw"]
+    W3DGadgetPushButtonImageDraw["W3DGadgetPushButtonImageDraw"]
+    W3DGadgetPushButtonImageDrawOne["W3DGadgetPushButtonImageDrawOne"]
+    W3DGadgetRadioButtonDraw["W3DGadgetRadioButtonDraw"]
+    W3DGadgetRadioButtonImageDraw["W3DGadgetRadioButtonImageDraw"]
+    W3DGadgetStaticTextDraw["W3DGadgetStaticTextDraw"]
+    W3DGadgetStaticTextImageDraw["W3DGadgetStaticTextImageDraw"]
+    W3DGadgetTabControlDraw["W3DGadgetTabControlDraw"]
+    W3DGadgetTabControlImageDraw["W3DGadgetTabControlImageDraw"]
+    W3DGadgetTextEntryDraw["W3DGadgetTextEntryDraw"]
+    W3DGadgetTextEntryImageDraw["W3DGadgetTextEntryImageDraw"]
+    W3DGadgetVerticalSliderDraw["W3DGadgetVerticalSliderDraw"]
+    W3DGadgetVerticalSliderImageDraw["W3DGadgetVerticalSliderImageDraw"]
+    W3DGameWinDefaultDraw["W3DGameWinDefaultDraw"]
+    W3DMainMenuButtonDropShadowDraw["W3DMainMenuButtonDropShadowDraw"]
+    W3DMainMenuDraw["W3DMainMenuDraw"]
+    W3DMainMenuInit["W3DMainMenuInit"]
+    W3DRoadBuffer__loadRoads["W3DRoadBuffer::loadRoads"]
+    W3DRoadBuffer__loadTee["W3DRoadBuffer::loadTee"]
+    W3DScienceModelDraw__doDrawModule["W3DScienceModelDraw::doDrawModule"]
+    W3DScienceModelDrawModuleData__buildFieldParse["W3DScienceModelDrawModuleData::buildFieldParse"]
+    WorldHeightMap__getAlphaUVData["WorldHeightMap::getAlphaUVData"]
+    WorldHeightMap__getTerrainTexture["WorldHeightMap::getTerrainTexture"]
+    WorldHeightMap__initCliffFlagsFromHeights["WorldHeightMap::initCliffFlagsFromHeights"]
+  end
+
+  draw --> drawEvents
+  draw --> drawIcons
+  draw --> drawViewBox
+  W3DScienceModelDraw__doDrawModule --> doDrawModule
+  renderBibs --> loadBibsInVertexAndIndexBuffers
+  MirrorRenderObjClass__Render --> renderWaterMesh
+  MirrorRenderObjClass__renderWater --> renderWaterMesh
+  updateCameraMovements --> moveAlongWaypointPath
+  renderWater__ --> renderWaterMesh
+  getUVData --> getUVForTileIndex
+  getMouseEvent --> translateEvent
+  doDrawModule --> draw
+  doDrawModule --> REF_PTR_RELEASE
+  tossSegments --> REF_PTR_RELEASE
+  initRopeParms --> tossSegments
+  initRopeParms --> buildSegments
+  doDrawModule --> buildSegments
+  doDrawModule --> enableEmitters
+  W3DGadgetHorizontalSliderDraw --> winGetScreenPosition
+  W3DGadgetHorizontalSliderDraw --> winGetSize
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetDisabledBorderColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetDisabledColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetHiliteBorderColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetHiliteColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetEnabledBorderColor
+  W3DGadgetHorizontalSliderDraw --> GadgetSliderGetEnabledColor
+  W3DGadgetHorizontalSliderDraw --> winOpenRect
+  W3DGadgetHorizontalSliderDraw --> winFillRect
+  W3DGadgetHorizontalSliderImageDraw --> winGetScreenPosition
+  W3DGadgetHorizontalSliderImageDraw --> winGetSize
+  W3DGadgetHorizontalSliderImageDraw --> GadgetSliderGetHiliteImageLeft
+  W3DGadgetHorizontalSliderImageDraw --> GadgetSliderGetDisabledImageRight
+  W3DGadgetHorizontalSliderImageDraw --> GadgetSliderGetDisabledImageLeft
+  W3DGadgetHorizontalSliderImageDraw --> winDrawImage
+  W3DGadgetHorizontalSliderImageDrawB --> winGetScreenPosition
+  W3DGadgetHorizontalSliderImageDrawB --> winGetSize
+  W3DGadgetHorizontalSliderImageDrawB --> GadgetSliderGetHiliteImageLeft
+  W3DGadgetHorizontalSliderImageDrawB --> GadgetSliderGetDisabledImageLeft
+  W3DGadgetHorizontalSliderImageDrawB --> GadgetSliderGetDisabledImageRight
+  W3DGadgetHorizontalSliderImageDrawB --> winDrawImage
+  W3DGadgetHorizontalSliderImageDrawA --> winGetScreenPosition
+  W3DGadgetHorizontalSliderImageDrawA --> winGetSize
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetDisabledImageLeft
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetDisabledImageRight
+  W3DGadgetHorizontalSliderImageDrawA --> GadgetSliderGetHiliteImageLeft
+  W3DGadgetHorizontalSliderImageDrawA --> winDrawImage
+  W3DGadgetListBoxDraw --> drawListBoxText
+  W3DGadgetListBoxImageDraw --> drawListBoxText
+  W3DGadgetPushButtonDraw --> drawButtonText
+  W3DGadgetPushButtonImageDraw --> W3DGadgetPushButtonImageDrawOne
+  W3DGadgetPushButtonImageDrawOne --> drawButtonText
+  W3DGadgetRadioButtonDraw --> drawRadioButtonText
+  W3DGadgetRadioButtonImageDraw --> drawRadioButtonText
+  W3DGadgetStaticTextDraw --> drawStaticTextText
+  W3DGadgetStaticTextImageDraw --> drawStaticTextText
+  W3DGadgetTabControlDraw --> W3DGameWinDefaultDraw
+  W3DGadgetTabControlDraw --> winGetScreenPosition
+  W3DGadgetTabControlDraw --> winGetSize
+  W3DGadgetTabControlDraw --> winDrawBorder
+  W3DGadgetTabControlDraw --> winOpenRect
+  W3DGadgetTabControlDraw --> winFillRect
+  W3DGadgetTabControlImageDraw --> W3DGameWinDefaultDraw
+  W3DGadgetTabControlImageDraw --> winGetScreenPosition
+  W3DGadgetTabControlImageDraw --> winGetSize
+  W3DGadgetTabControlImageDraw --> winDrawBorder
+  W3DGadgetTabControlImageDraw --> winDrawImage
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetDisabledBorderColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetDisabledColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetHiliteBorderColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetHiliteColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetEnabledBorderColor
+  W3DGadgetVerticalSliderDraw --> GadgetSliderGetEnabledColor
+  allocateEdgingBuffers --> NEW_REF
+  freeEdgingBuffers --> REF_PTR_RELEASE
+  takeScreenShot --> CreateBMPFile
+  newDisplayString --> newInstance
+  freeDisplayString --> deleteInstance
+  flagOccludedObjects --> Cast_Ray
+  flagOccludedObjects --> Get_Bounding_Sphere
+  castRay --> Cast_Ray
+  castRay --> Get_Bounding_Sphere
+  Visibility_Check --> Get_User_Data
+  Visibility_Check --> Get_Controlling_Player
+  Visibility_Check --> Get_Player_Index
+  flushOccludedObjects --> Get_User_Data
+  flushOccludedObjects --> Get_Controlling_Player
+  flushOccludedObjects --> Get_Player_Index
+  flushTranslucentObjects --> Get_User_Data
+  render --> interpolateFogLevels
+  interpolateFogLevels --> setShroudLevel
+  initData --> NEW_REF
+  init__ --> NEW_REF
+  MapObject__duplicate --> newInstance
+  MapObject__duplicate --> deleteInstance
+  WorldHeightMap__getAlphaUVData --> getUVForTileIndex
+  openFile --> getArchivedFileInfo
+  openFile --> newInstance
+  getFileInfo --> getArchivedFileInfo
+  openFile --> createDirectory
+  getFileListInDirectory --> FindFirstFile
+  getFileListInDirectory --> FindClose
+  getFileInfo --> FindFirstFile
+  getFileInfo --> FindClose
+  openKeyboard --> Acquire
+  getKey --> Acquire
+  init --> openKeyboard
+  initCursorResources --> doesFileExist
+```
+
+## Subsystem Dependencies
+
+Cross-subsystem call edges. Arrow labels show call counts.
+
+```mermaid
+%%{ init: { 'theme': 'dark' } }%%
+graph TD
+
+  Generals["Generals (721 funcs)"]
+
+```
+
+## Statistics
+
+- Total functions documented: 721
+- Total call edges: 338
+- Subsystems: 1
+
